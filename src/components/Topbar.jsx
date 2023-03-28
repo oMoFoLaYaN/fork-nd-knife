@@ -1,21 +1,20 @@
-import React from 'react'
+import { tops } from "../constants";
+import { layout } from "../style";
 
 const Topbar = () => {
   return (
-    <div id="topbar" className="d-flex align-items-center fixed-top">
-  <div className="container d-flex justify-content-center justify-content-md-between">
-    <div className="contact-info d-flex align-items-center">
-      <i className="bi bi-phone d-flex align-items-center">
-        <span>+1 5589 55488 55</span>
-      </i>
-      <i className="bi bi-clock d-flex align-items-center ms-4">
-        <span> Mon-Sat: 11AM - 23PM</span>
-      </i>
+    <div id="topbar" className="flex items-center fixed z-50 top-0 inset-x-0 h-10 text-sm transition-all duration-500">
+  <div className={`${layout.container} flex justify-center md:justify-start`} >
+    {tops.map((top) => (
+    <div key={top.id} className="flex items-center mx-2">
+      <i className={`${top.icon} flex items-center mx-2 text-amber-400`}/>
+        <span className="text-white">{top.name}</span>
     </div>
+  ))}
   </div>
 </div>
 
   )
-}
+  }
 
 export default Topbar

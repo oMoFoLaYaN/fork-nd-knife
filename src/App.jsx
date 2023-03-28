@@ -1,9 +1,11 @@
-import { Topbar, } from "./components";
+import { Topbar, Header, Hero } from "./components";
 
 const App = () => (
-    <body>
+    <>
         <Topbar/>
-    </body>
+        <Header/>
+        <Hero/>
+    </>
 );
 
 export default App;

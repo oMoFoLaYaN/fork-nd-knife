@@ -1,13 +1,13 @@
-import food1 from "./food1.jpg";
-import food2 from "./food2.jpg";
-import food1 from "./food3.jpg";
-import food2 from "./food4.jpg";
-import food1 from "./food5.jpg";
-import food2 from "./food6.jpg";
-import food1 from "./food7.jpg";
-import food2 from "./food8.jpg";
-import food1 from "./food9.jpg";
-import hero from "./hero.jpeg";
+import food1 from "./food1.png";
+import food2 from "./food2.png";
+import food3 from "./food3.png";
+import food4 from "./food4.png";
+import food5 from "./food5.png";
+import food6 from "./food6.png";
+import food7 from "./food7.png";
+import food8 from "./food8.png";
+import food9 from "./food9.png";
+import hero from "./hero.jpg";
 
 
 export {

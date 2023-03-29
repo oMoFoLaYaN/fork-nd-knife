@@ -1,6 +1,6 @@
 import React from 'react'
 import { layout } from '../style'
-import { hero, food1 } from '../assets'
+import { hero, heroed } from '../assets'
 import { heroButton } from '../constants'
 import Button from './Button'
 
@@ -27,7 +27,7 @@ const Hero = () => {
 
       <div
         className="grow-0 shrink-0 basis-auto md:w-1/3 w-full flex items-center justify-center ">
-        <img className='w-64 my-10 lg:w-80' src={food1} alt="" />  
+        <img className='w-64 my-10 lg:w-80' src={heroed} alt="" />  
       </div>
     </div>
   </div>

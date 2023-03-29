@@ -1,10 +1,11 @@
-import { Topbar, Header, Hero } from "./components";
+import { Topbar, Header, Hero, About } from "./components";
 
 const App = () => (
     <>
         <Topbar/>
         <Header/>
         <Hero/>
+        <About/>
     </>
 );
 

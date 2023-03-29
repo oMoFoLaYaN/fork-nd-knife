@@ -59,32 +59,24 @@ export const heroButton = [
   },
 ];
 
-export const food = [
+export const aboutData = [
   {
-    id: "food-1",
-    name: "Bali",
-    time: "24 Hours availiable",
-    img: food1,
+    title: "Fork nd Knife, where we offer a unique dining experience that is sure to satisfy your taste buds.",
+    description: "Our restaurant is the perfect spot for anyone who is looking for exceptional food, friendly service, and a warm, inviting atmosphere.",
+    checks: [
+      {
+        name: "We take great pride in serving only the highest quality ingredients, which are locally sourced whenever possible",
+      },
+      {
+        name: "Our menu features a wide range of options, from light and refreshing salads to hearty entrees and decadent desserts",
+      },
+      {
+        name: "We believe that dining out should be an experience, which is why we pay careful attention to every detail, from the atmosphere to the service",
+      },
+    ],
+    last: "So come and join us at Fork nd Knife, where we are committed to providing exceptional food, service, and ambiance that will keep you coming back for more.",
   },
-  {
-    id: "food-2",
-    name: "Hawaii",
-    time: "15 Hours availiable",
-    img: food2,
-  },
-  {
-    id: "food-3",
-    name: "Hvai",
-    time: "18 Hours availiable",
-    img: food3,
-  },
-  {
-    id: "food-4",
-    name: "WhiteHaven",
-    time: "32 Hours availiable",
-    img: food4,
-  },
-];
+]
 
 export const experience = [
   {

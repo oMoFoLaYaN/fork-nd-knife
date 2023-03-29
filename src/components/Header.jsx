@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <header id="header" className="transition-all duration-500 px-0 py-1 border-b border-solid border-b-neutral-800 top-10 bg-zinc-800 bg-opacity-60 fixed z-50 inset-x-0 flex items-center">
+    <header id="header" className="transition-all duration-500 px-0 py-2 border-b border-solid border-b-neutral-800 top-10 bg-zinc-800 bg-opacity-60 fixed z-50 inset-x-0 flex items-center">
       <div className={` ${layout.container} flex items-center lg:justify-between`}>
         <h1 className="text-3xl leading-none font-light tracking-normal uppercase m-0 p-0 font-sans mr-auto lg:mr-0">
           <a href="index.html" className="text-white font-display">Fork nd Knife</a>

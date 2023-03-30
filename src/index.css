@@ -4,13 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --hue-color: 47;
+}
 
 body {
-  @apply text-white bg-stone-700 dark:bg-amber-950;
+  @apply text-white bg-fola-0 dark:bg-fola-990;
   font-family: "Raleway", sans-serif;
 }
 a {
-  @apply text-amber-400 no-underline hover:text-amber-200 hover:no-underline;
+  @apply text-fola-400 no-underline hover:text-fola-200 hover:no-underline;
 }
 h1,
 h2,

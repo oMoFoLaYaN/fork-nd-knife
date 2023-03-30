@@ -5,35 +5,33 @@ import { layout } from '../style'
 
 const About = () => {
   return (
-    <section id="about" className="about">
+    <section id="about" className="about lg:bg-fixed">
   <div className={layout.container}>
     <div className={layout.row}>
       <div
-        className="grow-0 shrink-0 basis-auto w-6/12 order-1 lg:order-2"
+        className="lg:grow-0 lg:shrink-0 lg:basis-auto lg:px-8 lg:w-1/2 order-1 lg:order-2"
       >
         <div className="about-img relative duration-300">
-          <div className="absolute w-[60px] h-[60px] z-[1] content-[''] transition-[0.5s] border-l-[5px] border-l-[#cda45e] border-t-[5px] border-t-[#cda45e] border-solid left-5 top-5 hover:scale-[1.03] hover:left-2.5 hover:top-2.5"></div>
-          <img className='max-w-full relative border-4 border-solid' src={about} alt="" />
-          <div className=" absolute w-[60px] h-[60px] z-[2] content-[''] transition-[0.5s] border-r-[5px] border-r-[#cda45e] border-b-[5px] border-b-[#cda45e] border-solid right-5 bottom-5 hover:scale-[1.03] hover:right-2.5 hover:bottom-2.5"></div>
+        <img className='max-w-full relative border-4 border-solid hover:scale-105 duration-500 border-neutral-100/20' src={about} alt="" />
         </div>
       </div>
       {aboutData.map((about) => (
-      <div key={about.title} className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-        <h3>
+      <div key={about.title} className="lg:grow-0 lg:shrink-0 lg:basis-auto lg:w-1/2 pt-6 lg:pt-0 order-2 lg:order-1 text-fola-990 dark:text-fola-0 content">
+        <h3 className='font-semibold text-[26px] pb-1 tracking-tighter'>
           {about.title}
         </h3>
-        <p className="fst-italic">
+        <p className="italic py-2">
           {about.description}
         </p>
-        <ul>
+        <ul className='p-0 list-none'>
         {about.checks.map((check) => (
-          <li key={check.name} >
-            <i className="bi bi-check-circle" /> 
+          <li key={check.name} className="pb-2.5">
+            <i className="bi bi-check-circle text-xl text-fola-600 pr-2" /> 
             {check.name}
           </li>
         ))}
         </ul>
-        <p>
+        <p className='pt-4'>
           {about.last}
         </p>
       </div>

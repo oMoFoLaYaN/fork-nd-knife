@@ -12,7 +12,7 @@ const Hero = () => {
     <div className={`${layout.row}`}>
       <div className="grow-0 shrink-0 basis-auto md:w-2/3 w-full">
         <h1 className="md:text-5xl font-bold md:leading-[56px] font-body text-white m-0 text-[28px] leading-9 lg:mt-32">
-          Welcome to <span className='text-amber-400'>Fork nd Knife</span>
+          Welcome to <span className='text-fola-400'>Fork nd Knife</span>
         </h1>
         <h2 className='mt-2 md:text-xl text-neutral-200 text-lg leading-6'>You can only use fork and knife, Even for water!</h2>
         {heroButton.map((heroBtn) => (

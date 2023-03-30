@@ -6,15 +6,15 @@ import Button from "./Button";
 
 const Header = () => {
   const [header, setHeader] = useState("top-10");
-  const [color, setColor] = useState("bg-fola-0 dark:bg-fola-990 bg-opacity-60");
+  const [color, setColor] = useState("bg-fola-0 dark:bg-fola-990 dark:bg-opacity-60 bg-opacity-60");
   
   const listenScrollEvent = (event) => {
     if (window.scrollY < 73) {
-      return [setHeader("top-10"), setColor("bg-fola-0 dark:bg-fola-990 bg-opacity-60")];
+      return [setHeader("top-10"), setColor("bg-fola-0 dark:bg-fola-990 dark:bg-opacity-60 bg-opacity-60")];
     } else if (window.scrollY > 70) {
       return [
         setHeader("top-0"),
-        setColor("bg-fola-0 dark:bg-fola-990 bg-opacity-100"),
+        setColor("bg-fola-0 dark:bg-fola-990 dark:bg-opacity-100 bg-opacity-100"),
       ];
     }
   };
@@ -47,7 +47,9 @@ const Header = () => {
         <div className=" hidden lg:flex">
         <Button name="buy"/>
         </div>
-        <Theme/>
+        <Theme
+        color="text-fola-900 dark:text-fola-100"
+        />
       </div>
     </header>
   );

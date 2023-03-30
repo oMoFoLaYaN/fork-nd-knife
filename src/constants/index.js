@@ -78,24 +78,28 @@ export const aboutData = [
   },
 ]
 
-export const experience = [
+export const whyData = [
   {
-    id: "experience-1",
-    title1: "Years",
-    title2: "Experience",
-    value: "20",
+    title: "Why us",
+    subtitle: "Reason to count on us.",
+    reasons: [
+      {
+        icon: "bi bi-emoji-heart-eyes",
+        why: "Better Experience",
+        reason: "Want good service in a restaurant? Don't just expect it. Make it happen.",
+      },
+      {
+        icon: "bi bi-egg",
+        why: "Delicious Food",
+        reason: "We take great pride in serving only the highest quality ingredients, which are locally sourced whenever possible",
+      },
+      {
+        icon: "bi bi-cart-plus",
+        why: "Fast Delivery",
+        reason: "We take great pride in serving only the highest quality ingredients, which are locally sourced whenever possible",
+      },
+    ],
+    last: "So come and join us at Fork nd Knife, where we are committed to providing exceptional food, service, and ambiance that will keep you coming back for more.",
   },
-  {
-    id: "experience-2",
-    title1: "Completed",
-    title2: "Tours",
-    value: "75",
-  },
-  {
-    id: "experience-3",
-    title1: "Tourist",
-    title2: "Destination",
-    value: "650+",
-  },
-];
+]
 

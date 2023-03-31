@@ -13,29 +13,31 @@ const Menu = () => {
         <p className={layout.sectionSubtitle}>{menu.subtitle}</p>
       </div>
       <div className={layout.row}>
-        <div className="lg:w-full lg:basis-auto flex justify-center">
+        <div className="lg:w-full lg:basis-auto mx-auto flex flex-row justify-center">
         {menu.filters.map((filter) => (
-          <ul key={filter.id} id="menu-flters" className='text-center mx-0 my-0 p-0 rounded-[50px]'>
+          <ul key={filter.id} id="menu-flters" className='text-center mx-0 my-0 p-0'>
             <li data-filter={filter.id} className="filter-active capitalize cursor-pointer inline-block text-base font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3"><a>{filter.name}</a></li> 
           </ul>
         ))}
         </div>
       </div>
-      <div className="row menu-container">
+      <div className={layout.row}>
         {menu.menus.map((menu) => (
-        <div key={menu.name} className="col-lg-6 menu-item filter-starters">
-          <img
-            src={menu.img}
-            className="menu-img w-24"
-            alt=""
-          />
-          <div className="menu-content">
-            <a href="#">{menu.name}</a>
-            <span>${menu.price}</span>
+        <div key={menu.name} className="w-full lg:w-5/12 my-5 lg:mx-8 px-10 py-3 h-44 bg-fola-100 dark:bg-fola-950 rounded-xl">
+          <div className='flex flex-row justify-between'>
+          <img src={menu.img} className="menu-img w-24 relative -top-10 -right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900 " alt={menu.name}/>
+          <i className='bi bi-heart-fill p-3 text-xl text-fola-600 dark:text-fola-500'></i>
           </div>
-          <div className="menu-ingredients">
-            {menu.ingredients}
+          <div className="menu-content flex flex-row relative -top-5 justify-between">
+            <a href="#" className='font-bold capitalize text-lg font-display relative text-fola-950 dark:text-fola-100'>{menu.name}</a>
+            <span className='font-semibold text-fola-900 dark:text-fola-200'>${menu.price}</span>
           </div>
+          <p className="menu-ingredients text-xs relative text-fola-800 dark:text-fola-300 -top-5">{menu.ingredients}</p>
+          <div className='flex flex-row justify-between'>
+          <i className='bi bi-star relative -top-3 text-xl text-fola-600 dark:text-fola-500'/>
+          <a href="#" className='p-3 bg-fola-400 text-fola-900 font-semibold rounded relative -top-2'>Eat</a>
+          </div>
+          
         </div>
       ))}
       </div>

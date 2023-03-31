@@ -132,15 +132,15 @@ export const menuData =  [
         price: 200,
         ingredients: "lettuce, date, oil, scotch bonnet",
         category: "veggies",
-        rating: 4.9,
+        rating: 4.4,
       },
       {
-        name: "steak and potato",
+        name: "steaky potato",
         img: food2,
         price: 200,
         ingredients: "steak, baked potatoes, tomatoes, brocolli",
         category: "steak",
-        rating: 4.9,
+        rating: 4.6,
       },
       {
         name: "stir fry pasta",
@@ -148,7 +148,7 @@ export const menuData =  [
         price: 200,
         ingredients: "pasta, hotdog, onion, pepper",
         category: "feast",
-        rating: 4.9,
+        rating: 4.2,
       },
       {
         name: "steaked egg",
@@ -156,7 +156,7 @@ export const menuData =  [
         price: 200,
         ingredients: "egg, leaves, tomato, brocolli",
         category: "steak",
-        rating: 4.9,
+        rating: 4.0,
       },
       {
         name: "mushroom stroganoff",
@@ -164,7 +164,7 @@ export const menuData =  [
         price: 200,
         ingredients: "cauliflower, mushroom, carrot, filede",
         category: "feast",
-        rating: 4.9,
+        rating: 4.8,
       },
       {
         name: "tacos Islands",
@@ -172,7 +172,7 @@ export const menuData =  [
         price: 200,
         ingredients: "corn totillas, lime, mashed avocade, pork",
         category: "feast",
-        rating: 4.9,
+        rating: 4.1,
       },
       {
         name: "adamco salad",
@@ -180,7 +180,7 @@ export const menuData =  [
         price: 200,
         ingredients: "cucumber, chill, apple, cayenne pepper",
         category: "veggies",
-        rating: 4.9,
+        rating: 4.6,
       },
       {
         name: "tomato fajitas",
@@ -188,7 +188,7 @@ export const menuData =  [
         price: 200,
         ingredients: "tomato, spinach, tomato, sauce",
         category: "veggies",
-        rating: 4.9,
+        rating: 4.8,
       },
       {
         name: "apple zazoo",
@@ -196,7 +196,7 @@ export const menuData =  [
         price: 200,
         ingredients: "apple, steak, jute leaves, hot chilli",
         category: "steak",
-        rating: 4.9,
+        rating: 4.2,
       },
     ],
   },

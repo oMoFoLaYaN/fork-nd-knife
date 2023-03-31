@@ -1,4 +1,4 @@
-import { food1, food2, food3, food4 } from "../assets";
+import { food1, food2, food3, food4, food5, food6, food7, food8, food9, food10 } from "../assets";
 
 export const navLinks = [
   {
@@ -80,8 +80,8 @@ export const aboutData = [
 
 export const whyData = [
   {
-    title: "Why us",
-    subtitle: "Reason to count on us.",
+    title: "why us",
+    subtitle: "reason to count on us.",
     reasons: [
       {
         icon: "bi bi-emoji-heart-eyes",
@@ -103,3 +103,101 @@ export const whyData = [
   },
 ]
 
+export const menuData =  [
+  {
+    title: "menu",
+    subtitle: "check out our forky.",
+    filters: [
+      {
+        id: "*",
+        name: "all",
+      },
+      {
+        id: ".filter-steaked",
+        name: "steaked",
+      },
+      {
+        id: ".filter-veggies",
+        name: "veggies",
+      },
+      {
+        id: ".filter-feast",
+        name: "feast",
+      },
+    ],
+    menus: [
+      {
+        name: "lettuce pepper",
+        img: food1,
+        price: 200,
+        ingredients: "lettuce, date, oil, scotch bonnet",
+        category: "veggies",
+        rating: 4.9,
+      },
+      {
+        name: "steak and potato",
+        img: food2,
+        price: 200,
+        ingredients: "steak, baked potatoes, tomatoes, brocolli",
+        category: "steak",
+        rating: 4.9,
+      },
+      {
+        name: "stir fry pasta",
+        img: food3,
+        price: 200,
+        ingredients: "pasta, hotdog, onion, pepper",
+        category: "feast",
+        rating: 4.9,
+      },
+      {
+        name: "steaked egg",
+        img: food4,
+        price: 200,
+        ingredients: "egg, leaves, tomato, brocolli",
+        category: "steak",
+        rating: 4.9,
+      },
+      {
+        name: "mushroom stroganoff",
+        img: food5,
+        price: 200,
+        ingredients: "cauliflower, mushroom, carrot, filede",
+        category: "feast",
+        rating: 4.9,
+      },
+      {
+        name: "tacos Islands",
+        img: food6,
+        price: 200,
+        ingredients: "corn totillas, lime, mashed avocade, pork",
+        category: "feast",
+        rating: 4.9,
+      },
+      {
+        name: "adamco salad",
+        img: food7,
+        price: 200,
+        ingredients: "cucumber, chill, apple, cayenne pepper",
+        category: "veggies",
+        rating: 4.9,
+      },
+      {
+        name: "tomato fajitas",
+        img: food8,
+        price: 200,
+        ingredients: "tomato, spinach, tomato, sauce",
+        category: "veggies",
+        rating: 4.9,
+      },
+      {
+        name: "apple zazoo",
+        img: food9,
+        price: 200,
+        ingredients: "apple, steak, jute leaves, hot chilli",
+        category: "steak",
+        rating: 4.9,
+      },
+    ],
+  },
+];

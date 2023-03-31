@@ -23,7 +23,7 @@ const Menu = () => {
       </div>
       <div className={layout.row}>
         {menu.menus.map((menu) => (
-        <div key={menu.name} className="w-full lg:w-5/12 my-5 lg:mx-8 px-10 py-3 h-44 bg-fola-100 dark:bg-fola-950 rounded-xl">
+        <div key={menu.name} className="w-full lg:w-5/12 my-8 lg:mx-8 px-10 py-3 h-44 bg-fola-100 dark:bg-fola-950 rounded-xl">
           <div className='flex flex-row justify-between'>
           <img src={menu.img} className="menu-img w-24 relative -top-10 -right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900 " alt={menu.name}/>
           <i className='bi bi-heart-fill p-3 text-xl text-fola-600 dark:text-fola-500'></i>
@@ -34,8 +34,11 @@ const Menu = () => {
           </div>
           <p className="menu-ingredients text-xs relative text-fola-800 dark:text-fola-300 -top-5">{menu.ingredients}</p>
           <div className='flex flex-row justify-between'>
-          <i className='bi bi-star relative -top-3 text-xl text-fola-600 dark:text-fola-500'/>
-          <a href="#" className='p-3 bg-fola-400 text-fola-900 font-semibold rounded relative -top-2'>Eat</a>
+          <div className='flex flex-row relative -top-4'>
+          <i className='bi bi-star text-md text-fola-700 dark:text-fola-500'/>
+          <p className='relative ml-1 lg:ml-3 text-base text-fola-900 dark:text-fola-300'>{menu.rating}</p>
+          </div>
+          <a href="#" className='px-4 py-1 bg-fola-400 text-fola-900 font-semibold rounded-b-3xl relative top-2'>Eat This</a>
           </div>
           
         </div>

@@ -5,8 +5,13 @@
 @tailwind utilities;
 
 :root {
-  --hue-color: 47;
+  --hue: 53;
 }
+
+html, body {
+  margin: 0; 
+  padding: 0;
+} 
 
 body {
   @apply text-white bg-fola-0 dark:bg-fola-990;
@@ -26,4 +31,9 @@ h6 {
 
 section {
   @apply overflow-hidden px-0 py-[60px];
+}
+
+.clay {
+  box-shadow: inset 0px -5px 16px 0px hsla(var(--hue), 99%, 55%, 0.2), 
+  inset 0px 11px 28px 0px hsla(var(--hue), 99%, 55%, 0.2);
 }

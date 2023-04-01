@@ -11,6 +11,11 @@ import food10 from "./food10.png";
 import hero from "./hero.jpg";
 import heroed from "./heroed.png";
 import about from "./about.jpg";
+import special1 from "./specials-1.png";
+import special2 from "./specials-2.png";
+import special3 from "./specials-3.png";
+import special4 from "./specials-4.png";
+import special5 from "./specials-5.png";
 
 
 export {
@@ -27,4 +32,10 @@ export {
     hero,
     heroed,
     about,
+    special1,
+    special2,
+    special3,
+    special4,
+    special5,
+
 };

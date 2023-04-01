@@ -23,7 +23,7 @@ const Menu = () => {
       </div>
       <div className={layout.row}>
         {menu.menus.map((menu) => (
-        <div key={menu.name} className="w-full lg:w-5/12 my-8 lg:mx-8 px-5 py-3 h-fit bg-fola-100 dark:bg-fola-950 rounded-xl">
+        <div key={menu.name} className="w-full lg:w-5/12 my-8 lg:mx-8 px-5 py-3 h-fit bg-fola-100 dark:bg-fola-950 rounded-xl clay">
           <div className='flex flex-row justify-between'>
           <img src={menu.img} className="menu-img w-24 relative -top-10 right-0 xs:-right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900 " alt={menu.name}/>
           <i className='bi bi-heart-fill px-1 py-3 text-xl text-fola-600 dark:text-fola-500'></i>

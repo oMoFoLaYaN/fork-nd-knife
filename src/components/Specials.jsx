@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { specialsData } from '../constants'
 import { layout } from "../style";
 const Specials = () => {
+const [activeTab, setActiveTab] = useState(0);
+
+const handleTabClick = (tabIndex) => {
+  setActiveTab(tabIndex);
+};
+
   return (
     <section id="specials" className="specials overflow-hidden">
   {specialsData.map((special) => (
@@ -11,36 +17,34 @@ const Specials = () => {
       <p className={layout.sectionSubtitle}>{special.subtitle}</p>
     </div>
     
-    <div className={layout.row}>
-      <div className="lg:w1/4 lg:basis-auto">
-        <ul className="flex flex-wrap flex-col">
-        {special.dishes.map((dish) => (
-          <li key={dish.name} className="">
-            <a className="duration-300 text-white font-semibold text-base px-4 py-3 rounded-none border-r-2 border-r-fola-400 border-0 border-solid hover:text-fola-400hover:border-fola-400" href="">
+    <div className={`${layout.row}`}>
+      <div className="w-full lg:w-fit lg:mr-6">
+        <ul className="flex flex-col">
+        {special.dishes.map((dish, index) => (
+          <li key={index} className={`duration-300 text-left font-semibold text-base ${activeTab === index ? "bg-fola-500 text-fola-990" : "text-fola-990 dark:text-fola-50 hover:text-fola-700 hover:dark:text-fola-300 "} p-3 pl-5 lg:pr-5 rounded-none lg:border-r-2 lg:border-r-fola-400 border-solid`} onClick={() => handleTabClick(index)}>
+            <button className="" href="#">
               {dish.name}
-            </a>
+            </button>
           </li>
           ))}
         </ul>
       </div>
       <div className="lg:w-9/12 mt-6 lg:mt-0">
-        <div className="tab-content">
-          <div className="tab-pane active show" id="tab-1">
-            {special.dishes.map((dish) => (
-            <div key={dish.name} className="row">
-            
-              <div className="col-lg-8 details order-2 order-lg-1">
-                <h3>{`The ${dish.origin.region}'s treat of ${dish.name} `}</h3>
-                <p className="italic">{dish.description}</p>
+        <div className="my-5">
+            {special.dishes.map((dish, index) => (
+          <div key={index} className={`${activeTab === index ? "block" : "hidden"}`} id="">
+            <div className={layout.row}>
+              <div className="lg:w-8/12 lg:basis-auto details order-2 lg:order-1 lg:-mt-10">
+                <h3 className='text-xl font-semibold text-white my-5'>{`The ${dish.origin.region}'s treat of ${dish.name} `}</h3>
+                <p className="italic text-neutral-600 dark:text-neutral-400 mb-3">{dish.description}</p>
                 <p>{dish.preparation}</p>
               </div>
-              <div className="col-lg-4 text-center order-1 order-lg-2">
-                <img src={dish.img} alt=" " className="h-auto max-w-full shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900"/>
+              <div className="lg:w-1/3 lg:basis-auto text-center order-1 lg:order-2">
+                <img src={dish.img} alt=" " className="h-auto max-w-full lg:mx-5 lg:-mt-6 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900"/>
               </div>
-           
             </div>
-             ))}
           </div>
+             ))}
         </div>
       </div>
     </div>

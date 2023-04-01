@@ -237,7 +237,7 @@ export const specialsData = [
         img: special3,
         origin: {
           country: "Middle East",
-          region: "Western Asia, North Africa, and parts of Mediterranean Europe"
+          region: "North Africa"
         },
         preparation: "Falafel is prepared by soaking chickpeas in water overnight, then grinding them with onions, herbs, and spices. The resulting mixture is formed into balls or patties and then fried or baked until golden brown. It is typically served in a pita pocket with vegetables and a creamy tahini sauce."
       },

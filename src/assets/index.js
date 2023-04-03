@@ -16,6 +16,9 @@ import special2 from "./specials-2.png";
 import special3 from "./specials-3.png";
 import special4 from "./specials-4.png";
 import special5 from "./specials-5.png";
+import event1 from "./event1.jpg";
+import event2 from "./event2.jpg";
+import event3 from "./event3.jpg";
 
 
 export {
@@ -37,5 +40,7 @@ export {
     special3,
     special4,
     special5,
-
+    event1,
+    event2,
+    event3,
 };

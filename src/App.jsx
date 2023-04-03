@@ -1,4 +1,4 @@
-import { Topbar, Header, Hero, About, Why, Menu, Specials } from "./components";
+import { Topbar, Header, Hero, About, Why, Menu, Specials, Events } from "./components";
 
 const App = () => (
     <>
@@ -9,6 +9,7 @@ const App = () => (
         <Why/>
         <Menu/>
         <Specials/>
+        <Events/>
     </>
 );
 

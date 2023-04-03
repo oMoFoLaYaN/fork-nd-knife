@@ -1,4 +1,4 @@
-import { food1, food2, food3, food4, food5, food6, food7, food8, food9, special1, special2, special3, special4, special5 } from "../assets";
+import { food1, food2, food3, food4, food5, food6, food7, food8, food9, special1, special2, special3, special4, special5, event1, event2, event3 } from "../assets";
 
 export const navLinks = [
   {
@@ -109,19 +109,19 @@ export const menuData =  [
     subtitle: "check out our forky.",
     filters: [
       {
-        id: "*",
+        id: 1,
         name: "all",
       },
       {
-        id: ".filter-steaked",
+        id: 2,
         name: "steaked",
       },
       {
-        id: ".filter-veggies",
+        id: 3,
         name: "veggies",
       },
       {
-        id: ".filter-feast",
+        id: 4,
         name: "feast",
       },
     ],
@@ -266,3 +266,82 @@ export const specialsData = [
     ],
   },
 ];
+
+export const eventData = [
+  {
+    title: "Event",
+    subtitle: "Host Your Next Event with Us - We'll Take Care of Everything",
+    events: [
+      {
+        img: event1,
+        title: "Intimate Gatherings",
+        price: 187,
+        details: [
+          {
+            description: "For smaller groups of up to 20 people, we offer intimate gathering packages that includes",
+            list: [
+              {
+                li: "a private dining room",
+              },
+              {
+                li: "personalized menu options",
+              },
+              {
+                li: "dedicated waitstaff",
+              },
+              ],
+              conclusion: "Our cozy and intimate setting is perfect for family gatherings, anniversary celebrations, or small business dinners",
+          },
+          ],
+      },
+      ],
+      events: [
+        {
+          img: event2,
+          title: "Corporate Events",
+          price: 187,
+          details: [
+            {
+              description: " Our restaurant is equipped to host large-scale corporate events with all the amenities you need to impress your clients or employees. Our corporate event packages include",
+              list: [
+                {
+                  img: "access to audio/visual equipment",
+                },
+                {
+                  img: "customizable menus",
+                },
+                {
+                  img: "dedicated event coordinators to ensure a successful event",
+                },
+                ],
+                conclusion: "Our customizable menus and dedicated event coordinators ensure that every detail is taken care of, so you can focus on building relationships with your clients or employees.",
+            },
+            ],
+        },
+        ],
+        events: [
+          {
+            img: event3,
+            title: "Wedding Receptions",
+            price: 187,
+            details: [
+              {
+                description: " We know that your wedding day is one of the most important days of your life, and we're here to help you make it perfect. Our wedding reception packages include",
+                list: [
+                  {
+                    img: "access to our beautiful event spaces",
+                  },
+                  {
+                    img: "customizable menus",
+                  },
+                  {
+                    img: "dedicated event coordinators to ensure your special day is everything you've dreamed of",
+                  },
+                  ],
+                  conclusion: "our experienced staff will take care of all the details so you can enjoy your special day stress-free.",
+              },
+              ],
+          },
+          ],
+    },
+]

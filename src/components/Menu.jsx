@@ -16,7 +16,7 @@ const Menu = () => {
         <div className="lg:w-full lg:basis-auto mx-auto flex flex-row justify-center">
         {menu.filters.map((filter) => (
           <ul key={filter.id} id="menu-flters" className='text-right xs:text-center mx-0 my-0 p-0'>
-            <li data-filter={filter.id} className="filter-active capitalize cursor-pointer inline-block xs:text-base text-xs font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3"><a>{filter.name}</a></li> 
+            <li className="filter-active capitalize cursor-pointer inline-block xs:text-base text-xs font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3"><a>{filter.name}</a></li> 
           </ul>
         ))}
         </div>

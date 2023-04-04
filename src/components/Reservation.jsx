@@ -3,7 +3,7 @@ import { layout } from '../style'
 
 const Reservation = () => {
   return (
-  <section id="book-a-table" className="book-a-table">
+  <section id="book-a-table" className="book-a-table bg-fola-50 dark:bg-fola-950 ">
   <div className={layout.container}>
     <div className="pb-10">
       <h2 className={layout.sectionTitle}>Reservation</h2>

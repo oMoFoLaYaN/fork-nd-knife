@@ -9,7 +9,7 @@ const handleTabClick = (tabIndex) => {
 };
 
   return (
-    <section id="specials" className="specials overflow-hidden">
+    <section id="specials" className="specials bg-fola-50 dark:bg-fola-950  overflow-hidden">
   <div className={layout.container}>
     <div className="section-title pb-10">
     <h2 className={layout.sectionTitle}>specials</h2>

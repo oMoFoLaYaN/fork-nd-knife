@@ -19,6 +19,11 @@ import special5 from "./specials-5.png";
 import event1 from "./event1.jpg";
 import event2 from "./event2.jpg";
 import event3 from "./event3.jpg";
+import testimonial1 from "./testimonial1.jpg";
+import testimonials2 from "./testimonial2.jpg";
+import testimonials3 from "./testimonial3.jpg";
+import testimonials4 from "./testimonial4.jpg";
+import testimonials5 from "./testimonial5.jpg";
 
 
 export {
@@ -43,4 +48,9 @@ export {
     event1,
     event2,
     event3,
+    testimonial1,
+    testimonials2,
+    testimonials3,
+    testimonials4,
+    testimonials5,
 };

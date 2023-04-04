@@ -1,4 +1,4 @@
-import { food1, food2, food3, food4, food5, food6, food7, food8, food9, special1, special2, special3, special4, special5, event1, event2, event3 } from "../assets";
+import { food1, food2, food3, food4, food5, food6, food7, food8, food9, special1, special2, special3, special4, special5, event1, event2, event3, testimonial1, testimonials2, testimonials3, testimonials4, testimonials5 } from "../assets";
 
 export const navLinks = [
   {
@@ -311,3 +311,42 @@ export const parties = [
           ],
       },
       ]
+
+      const testimonials = [
+        { name: 'Samantha Jones',
+          img: testimonial1,
+          profession: 'Food Critic',
+          review: 'The flavors were well-balanced and the presentation was impeccable. This is easily one of the best restaurants in the city.'
+        },
+        { name: 'Javier Rodriguez',
+          img: testimonial,
+          profession: 'Chef',
+          review: 'I was blown away by the creativity and attention to detail in every dish. The chef is a true master of their craft.'
+        },
+        { name: 'Emily Nguyen',
+          img: testimonial,
+          profession: 'Server',
+          review: 'The service was exceptional - our server was friendly, knowledgeable, and attentive throughout the meal.'
+        },
+        { name: 'Alex Martinez',
+          img: testimonial,
+          profession: 'Bartender',
+          review: 'The cocktail menu was top-notch and the drinks were expertly crafted. The bar staff really knows their stuff.'
+        },
+        { name: 'William Chen',
+          img: testimonial,
+          profession: 'Sommelier',
+          review: 'The wine list was impressive and our sommelier recommended the perfect pairing for each course. A truly memorable dining experience.'
+        },
+        { name: 'Maya Patel',
+          img: testimonial,
+          profession: 'Food Blogger',
+          review: 'I couldn\'t get enough of the dishes here - each one was more delicious than the last. I\'ll definitely be recommending this restaurant to my readers.'
+        },
+        { name: 'John Smith',
+          img: testimonial,
+          profession: 'Tourist',
+          review: 'I stumbled upon this restaurant while exploring the city and I\'m so glad I did. The food was amazing and the atmosphere was charming.'
+        }
+      ];
+      

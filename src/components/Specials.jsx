@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { specialsData } from '../constants'
+import { dishes } from '../constants'
 import { layout } from "../style";
 const Specials = () => {
 const [activeTab, setActiveTab] = useState(0);
@@ -10,17 +10,16 @@ const handleTabClick = (tabIndex) => {
 
   return (
     <section id="specials" className="specials overflow-hidden">
-  {specialsData.map((special) => (
-  <div key={special.title} className={layout.container}>
+  <div className={layout.container}>
     <div className="section-title pb-10">
-    <h2 className={layout.sectionTitle}>{special.title}</h2>
-      <p className={layout.sectionSubtitle}>{special.subtitle}</p>
+    <h2 className={layout.sectionTitle}>specials</h2>
+      <p className={layout.sectionSubtitle}>explore our signature dishes today.</p>
     </div>
     
     <div className="flex flex-wrap mt-0 lg:mx-6">
       <div className="w-full lg:w-fit lg:mr-6">
         <ul className="flex flex-col">
-        {special.dishes.map((dish, index) => (
+        {dishes.map((dish, index) => (
           <li key={index} className={`duration-300 text-left font-semibold text-base ${activeTab === index ? "bg-fola-500 text-fola-990" : "text-fola-990 dark:text-fola-50 hover:text-fola-700 hover:dark:text-fola-300 "} p-3 pl-5 lg:pr-5 rounded-none lg:border-r-2 lg:border-r-fola-400 border-solid`} onClick={() => handleTabClick(index)}>
             <button className="" href="#">
               {dish.name}
@@ -31,7 +30,7 @@ const handleTabClick = (tabIndex) => {
       </div>
       <div className="lg:w-9/12 mt-6 lg:mt-0">
         <div className="my-5">
-            {special.dishes.map((dish, index) => (
+            {dishes.map((dish, index) => (
           <div key={index} className={`${activeTab === index ? "block" : "hidden"}`} id="">
             <div className={layout.row}>
               <div className="lg:w-8/12 lg:basis-auto details order-2 lg:order-1 lg:-mt-10">
@@ -49,7 +48,6 @@ const handleTabClick = (tabIndex) => {
       </div>
     </div>
   </div>
-  ))}
 </section>
 
   )

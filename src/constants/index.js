@@ -59,11 +59,7 @@ export const heroButton = [
   },
 ];
 
-export const aboutData = [
-  {
-    title: "Fork nd Knife, where we offer a unique dining experience that is sure to satisfy your taste buds.",
-    description: "Our restaurant is the perfect spot for anyone who is looking for exceptional food, friendly service, and a warm, inviting atmosphere.",
-    checks: [
+export const checks = [
       {
         name: "We take great pride in serving only the highest quality ingredients, which are locally sourced whenever possible",
       },
@@ -73,16 +69,10 @@ export const aboutData = [
       {
         name: "We believe that dining out should be an experience, which is why we pay careful attention to every detail, from the atmosphere to the service",
       },
-    ],
-    last: "So come and join us at Fork nd Knife, where we are committed to providing exceptional food, service, and ambiance that will keep you coming back for more.",
-  },
-]
+    ]
 
-export const whyData = [
-  {
-    title: "why us",
-    subtitle: "reason to count on us.",
-    reasons: [
+
+export const reasons = [
       {
         icon: "bi bi-emoji-heart-eyes",
         why: "Better Experience",
@@ -98,16 +88,9 @@ export const whyData = [
         why: "Fast Delivery",
         reason: "We take great pride in serving only the highest quality ingredients, which are locally sourced whenever possible",
       },
-    ],
-    last: "So come and join us at Fork nd Knife, where we are committed to providing exceptional food, service, and ambiance that will keep you coming back for more.",
-  },
-]
-
-export const menuData =  [
-  {
-    title: "menu",
-    subtitle: "check out our forky.",
-    filters: [
+    ]
+ 
+export const filters = [
       {
         id: 1,
         name: "all",
@@ -124,8 +107,10 @@ export const menuData =  [
         id: 4,
         name: "feast",
       },
-    ],
-    menus: [
+    ]
+
+
+    export const menus = [
       {
         name: "lettuce pepper",
         img: food1,
@@ -198,16 +183,9 @@ export const menuData =  [
         category: "steak",
         rating: 4.2,
       },
-    ],
-  },
-];
+    ]
 
-
-export const specialsData = [
-  {
-    title: "specials",
-    subtitle: "explore our signature dishes today.",
-    dishes: [
+export const dishes = [
       {
         name: "Nigiri",
         description: "Japanese dish consisting of small balls or rolls of vinegar-flavored cold cooked rice served with a garnish of raw fish, vegetables, or egg.",
@@ -263,19 +241,13 @@ export const specialsData = [
         },
         preparation: "Moussaka is prepared by layering thinly sliced eggplant with a tomato-based meat sauce made"
       },
-    ],
-  },
-];
+    ]
 
-export const eventData = [
-  {
-    title: "Event",
-    subtitle: "Host Your Next Event with Us - We'll Take Care of Everything",
-    events: [
+export const parties = [
       {
         img: event1,
         title: "Intimate Gatherings",
-        price: 187,
+        price: 112,
         details: [
           {
             description: "For smaller groups of up to 20 people, we offer intimate gathering packages that includes",
@@ -290,58 +262,52 @@ export const eventData = [
                 li: "dedicated waitstaff",
               },
               ],
-              conclusion: "Our cozy and intimate setting is perfect for family gatherings, anniversary celebrations, or small business dinners",
+            conclusion: "Our cozy and intimate setting is perfect for family gatherings, anniversary celebrations, or small business dinners",
           },
           ],
       },
-      ],
-      events: [
-        {
-          img: event2,
-          title: "Corporate Events",
-          price: 187,
-          details: [
-            {
-              description: " Our restaurant is equipped to host large-scale corporate events with all the amenities you need to impress your clients or employees. Our corporate event packages include",
-              list: [
-                {
-                  img: "access to audio/visual equipment",
-                },
-                {
-                  img: "customizable menus",
-                },
-                {
-                  img: "dedicated event coordinators to ensure a successful event",
-                },
-                ],
-                conclusion: "Our customizable menus and dedicated event coordinators ensure that every detail is taken care of, so you can focus on building relationships with your clients or employees.",
-            },
-            ],
-        },
-        ],
-        events: [
+      {
+        img: event2,
+        title: "Corporate Events",
+        price: 299,
+        details: [
           {
-            img: event3,
-            title: "Wedding Receptions",
-            price: 187,
-            details: [
+            description: " Our restaurant is equipped to host large-scale corporate events with all the amenities you need to impress your clients or employees. Our corporate event packages include",
+            list: [
               {
-                description: " We know that your wedding day is one of the most important days of your life, and we're here to help you make it perfect. Our wedding reception packages include",
-                list: [
-                  {
-                    img: "access to our beautiful event spaces",
-                  },
-                  {
-                    img: "customizable menus",
-                  },
-                  {
-                    img: "dedicated event coordinators to ensure your special day is everything you've dreamed of",
-                  },
-                  ],
-                  conclusion: "our experienced staff will take care of all the details so you can enjoy your special day stress-free.",
+                li: "access to audio/visual equipment",
+              },
+              {
+                li: "customizable menus",
+              },
+              {
+                li: "dedicated event coordinators to ensure a successful event",
               },
               ],
+            conclusion: "Every detail is taken care of, so you can focus on building relationships with your clients or employees.",
           },
           ],
-    },
-]
+      },
+      {
+        img: event3,
+        title: "Wedding Receptions",
+        price: 529,
+        details: [
+          {
+            description: " We know that your wedding day is one of the most important days of your life, and we're here to help you make it perfect. Our wedding reception packages include",
+            list: [
+              {
+                li: "access to our beautiful event spaces",
+              },
+              {
+                li: "customizable menus",
+              },
+              {
+                li: "dedicated event coordinators to ensure your special day is everything you've dreamed of",
+              },
+              ],
+            conclusion: "our experienced staff will take care of all the details so you can enjoy your special day stress-free.",
+          },
+          ],
+      },
+      ]

@@ -1,28 +1,27 @@
 import React from 'react'
-import { menuData } from '../constants'
+import { filters, menus } from '../constants'
 import { layout } from '../style'
 
 const Menu = () => {
   return (
     <>
   <section id="menu" className="menu section-bg">
-  {menuData.map((menu) => (
-    <div key={menu.title} className={layout.container}>
+    <div className={layout.container}>
       <div className="pb-10">
-        <h2 className={layout.sectionTitle}>{menu.title}</h2>
-        <p className={layout.sectionSubtitle}>{menu.subtitle}</p>
+        <h2 className={layout.sectionTitle}>Menu</h2>
+        <p className={layout.sectionSubtitle}>check out our forky</p>
       </div>
       <div className={layout.row}>
         <div className="lg:w-full lg:basis-auto mx-auto flex flex-row justify-center">
-        {menu.filters.map((filter) => (
-          <ul key={filter.id} id="menu-flters" className='text-right xs:text-center mx-0 my-0 p-0'>
+        {filters.map((filter, index) => (
+          <ul key={index} id="menu-flters" className='text-right xs:text-center mx-0 my-0 p-0'>
             <li className="filter-active capitalize cursor-pointer inline-block xs:text-base text-xs font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3"><a>{filter.name}</a></li> 
           </ul>
         ))}
         </div>
       </div>
       <div className={layout.row}>
-        {menu.menus.map((menu) => (
+        {menus.map((menu) => (
         <div key={menu.name} className="w-full lg:w-5/12 my-8 lg:mx-8 px-5 py-3 h-fit bg-fola-100 dark:bg-fola-950 rounded-xl clay">
           <div className='flex flex-row justify-between'>
           <img src={menu.img} className="menu-img w-24 relative -top-10 right-0 xs:-right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900 " alt={menu.name}/>
@@ -45,7 +44,6 @@ const Menu = () => {
       ))}
       </div>
     </div>
-  ))}
   </section>
 </>
 

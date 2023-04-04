@@ -1,51 +1,86 @@
-import { eventData } from '../constants'
+import { parties } from "../constants";
+import { layout } from "../style";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Mousewheel, Keyboard } from "swiper";
+
+import "swiper/css/bundle";
 
 const Events = () => {
   return (
     <section id="events" className="events">
-{eventData.map((event, index) => (
-  <div key={index} className="container">
-    <div className="section-title">
-      <h2>{event.title}</h2>
-      <p>{event.subtitle}</p>
-    </div>
-    {event.events.map((event, index) => (
-    <div key={index} className="events-slider swiper">
-      <div className="swiper-wrapper">
-        <div className="swiper-slide">
-          <div className="row event-item">
-            <div className="col-lg-6">
-              <img src={event.img} className="img-fluid" alt=""/>
-            </div>
-            <div className="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>{event.title}</h3>
-              <div className="price">
-                <p>
-                  <span>{`${event.price}`}</span>
-                </p>
-              </div>
-              {event.details.map((detail, index) => (
-              <div key={index}>
-              <p className="fst-italic">{detail.description}</p>
-              <ul>
-                <li>
-                  <i className="bi bi-check-circled" />{detail.list.li}</li>
-              </ul>
-              <p>{detail.conclusion} </p>
-              </div>
-              ))}
-            </div>
-          </div>
+      <div className={`${layout.container} relative`}>
+        <div className="pb-10">
+          <h2 className={layout.sectionTitle}>specials</h2>
+          <p className={layout.sectionSubtitle}>
+            Host Your Next Event with Us - We'll Take Care of Everything
+          </p>
+        </div>
+
+        <div className="swiper-wrapper">
+          <Swiper
+            style={{
+              "--swiper-pagination-bullet-horizontal-gap": "6px",
+              "--swiper-pagination-bottom": "-0px",
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+              dynamicBullets: true,
+            }}
+            keyboard={{
+              enabled: true,
+            }}
+            spaceBetween={30}
+            loop={true}
+            modules={[Pagination, Mousewheel, Autoplay, Keyboard]}
+            className="swiper-wrapper"
+          >
+            {parties.map((party, index) => (
+              <SwiperSlide key={index} className="swiper-slide">
+                <div className={`${layout.row} event-item`}>
+                  <div className="lg:w-5/12 lg:mr-5 lg:basis-auto">
+                    <img
+                      src={party.img}
+                      className="rounded-md"
+                      alt={party.title}
+                    />
+                  </div>
+                  <div className="lg:w-5/12 lg:ml-5 lg:basis-auto pt-6 lg:pt-0 text-fola-950 dark:text-fola-50">
+                    <h3 className="font-semibold text-[26px] text-fola-500">
+                      {party.title}
+                    </h3>
+                    <div className="text-[26px] font-bold mb-4">
+                      <p>
+                        <span className="border-b-2 border-b-fola-500 border-solid">{`$${party.price}`}</span>
+                      </p>
+                    </div>
+                    {party.details.map((detail, index) => (
+                      <div key={index}>
+                        <p className="italic">{detail.description}</p>
+                        <ul className=" p-0">
+                          {detail.list.map((list, index) => (
+                            <li key={index} className="pb-2.5">
+                              <i className="bi bi-check-circle text-xl text-fola-500 pr-1" />
+                              {list.li}
+                            </li>
+                          ))}
+                        </ul>
+                        <p>{detail.conclusion} </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+            <div className="swiper-pagination"></div>
+          </Swiper>
         </div>
       </div>
-      <div className="swiper-pagination" />
-    </div>
-    ))}
-  </div>
-))}
-</section>
+    </section>
+  );
+};
 
-  )
-}
-
-export default Events
+export default Events;

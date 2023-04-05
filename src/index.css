@@ -39,36 +39,6 @@ section {
 }
 
 .swiper-pagination-bullet {
-  @apply bg-fola-500
+  @apply bg-fola-800 dark:bg-fola-500
 }
 
-.book-a-table .form input,
-.book-a-table .form textarea {
-  @apply shadow-none text-sm text-[white] rounded-none border-[#625b4b];
-  background: #0c0b09;
-}
-.book-a-table .form input::-moz-placeholder,
-.book-a-table .form textarea::-moz-placeholder {
-  @apply text-[#a49b89];
-}
-.book-a-table .form input::placeholder,
-.book-a-table .form textarea::placeholder {
-  @apply text-[#a49b89];
-}
-.book-a-table .form input:focus,
-.book-a-table .form textarea:focus {
-  @apply border-[#cda45e];
-}
-.book-a-table .form input {
-  @apply h-11;
-}
-.book-a-table .form textarea {
-  @apply px-3 py-2.5;
-}
-.book-a-table .form button[type="submit"] {
-  @apply text-white transition-[0.4s] px-[35px] py-2.5 rounded-[50px] border-0;
-  background: #cda45e;
-}
-.book-a-table .form button[type="submit"]:hover {
-  background: #d3af71;
-}

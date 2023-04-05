@@ -20,10 +20,18 @@ import event1 from "./event1.jpg";
 import event2 from "./event2.jpg";
 import event3 from "./event3.jpg";
 import testimonial1 from "./testimonial1.jpg";
-import testimonials2 from "./testimonial2.jpg";
-import testimonials3 from "./testimonial3.jpg";
-import testimonials4 from "./testimonial4.jpg";
-import testimonials5 from "./testimonial5.jpg";
+import testimonial2 from "./testimonial2.jpg";
+import testimonial3 from "./testimonial3.jpg";
+import testimonial4 from "./testimonial4.jpg";
+import testimonial5 from "./testimonial5.jpg";
+import gallery1 from "./gallery-1.jpg";
+import gallery2 from "./gallery-2.jpg";
+import gallery3 from "./gallery-3.jpg";
+import gallery4 from "./gallery-4.jpg";
+import gallery5 from "./gallery-5.jpg";
+import gallery6 from "./gallery-6.jpg";
+import gallery7 from "./gallery-7.jpg";
+import gallery8 from "./gallery-8.jpg";
 
 
 export {
@@ -49,8 +57,16 @@ export {
     event2,
     event3,
     testimonial1,
-    testimonials2,
-    testimonials3,
-    testimonials4,
-    testimonials5,
+    testimonial2,
+    testimonial3,
+    testimonial4,
+    testimonial5,
+    gallery1,
+    gallery2,
+    gallery3,
+    gallery4,
+    gallery5,
+    gallery6,
+    gallery7,
+    gallery8,
 };

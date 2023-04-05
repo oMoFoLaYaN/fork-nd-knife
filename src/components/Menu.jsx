@@ -21,7 +21,7 @@ const Menu = () => {
             <div className="lg:w-full lg:basis-auto mx-auto flex flex-row justify-center">
               {filters.map((filter, index) => (
                 <ul key={index} id="menu-flters" className='text-right xs:text-center mx-0 my-0 p-0'>
-                  <li className="filter-active capitalize cursor-pointer inline-block xs:text-base text-xs font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3" onClick={() => filterClick(filter.name)}><a>{filter.name}</a></li>
+                  <li className="filter-active capitalize inline-block xs:text-base text-xs font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3"><a onClick={() => filterClick(filter.name)} className="cursor-pointer">{filter.name}</a></li>
                 </ul>
               ))}
             </div>
@@ -34,7 +34,7 @@ const Menu = () => {
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }} 
-              transition={{ease: 'easeInOut', type: 'spring', delay: 0}}
+              transition={{ease: 'easeInOut', type: 'tween', delay: 0, duration: .3}}
               layout 
               className="w-full lg:w-5/12 my-8 lg:mx-8 px-5 py-3 h-fit bg-fola-100 dark:bg-fola-950 rounded-xl clay">
                 <div className='flex flex-row justify-between'>

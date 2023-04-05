@@ -7,7 +7,7 @@ const Reservation = () => {
   <div className={layout.container}>
     <div className="pb-10">
       <h2 className={layout.sectionTitle}>Reservation</h2>
-      <p className={layout.sectionSubtitle}>Book a Table</p>
+      <p className={layout.sectionSubtitle}>Secure your spot with a click</p>
     </div>
     <form
       action=""

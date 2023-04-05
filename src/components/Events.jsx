@@ -12,7 +12,7 @@ const Events = () => {
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>specials</h2>
           <p className={layout.sectionSubtitle}>
-            Host Your Next Event with Us - We'll Take Care of Everything
+            Host Your Next Event with Us
           </p>
         </div>
 

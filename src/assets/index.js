@@ -32,6 +32,9 @@ import gallery5 from "./gallery-5.jpg";
 import gallery6 from "./gallery-6.jpg";
 import gallery7 from "./gallery-7.jpg";
 import gallery8 from "./gallery-8.jpg";
+import chef1 from "./chefs-1.jpg";
+import chef2 from "./chefs-2.jpg";
+import chef3 from "./chefs-3.jpg";
 
 
 export {
@@ -69,4 +72,7 @@ export {
     gallery6,
     gallery7,
     gallery8,
+    chef1,
+    chef2,
+    chef3,
 };

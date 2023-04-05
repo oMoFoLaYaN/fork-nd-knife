@@ -1,4 +1,4 @@
-import { food1, food2, food3, food4, food5, food6, food7, food8, food9, special1, special2, special3, special4, special5, event1, event2, event3, testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8 } from "../assets";
+import { food1, food2, food3, food4, food5, food6, food7, food8, food9, special1, special2, special3, special4, special5, event1, event2, event3, testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8, chef1, chef2, chef3 } from "../assets";
 
 export const navLinks = [
   {
@@ -383,3 +383,33 @@ export const gallery = [
     img: gallery8
   },
 ];
+
+export const chefs = [
+  {
+    img: chef1,
+    name: 'John Smith',
+    role: 'executive chef',
+    facebook: 'http://www.facebook.com',
+    twitter: 'http://twitter.com',
+    instagram: 'http://instagram.com',
+    linkedin: 'http://www.linkedin.com',
+  },
+  {
+    img: chef2,
+    name: 'sarah davis',
+    role: 'expediter',
+    facebook: 'http://www.facebook.com',
+    twitter: 'http://twitter.com',
+    instagram: 'http://instagram.com',
+    linkedin: 'http://www.linkedin.com',
+  },
+  {
+    img: chef3,
+    name: 'James Lee',
+    role: 'line cook',
+    facebook: 'http://www.facebook.com',
+    twitter: 'http://twitter.com',
+    instagram: 'http://instagram.com',
+    linkedin: 'http://www.linkedin.com',
+  },
+]

@@ -124,7 +124,7 @@ export const menus = [
     img: food2,
     price: 12.50,
     ingredients: "steak, baked potatoes, tomatoes, brocolli",
-    category: "steak",
+    category: "steaked",
     rating: 4.6,
   },
   {
@@ -140,7 +140,7 @@ export const menus = [
     img: food4,
     price: 10.99,
     ingredients: "egg, leaves, tomato, brocolli",
-    category: "steak",
+    category: "steaked",
     rating: 4.0,
   },
   {
@@ -180,7 +180,7 @@ export const menus = [
     img: food9,
     price: 6.99,
     ingredients: "apple, steak, jute leaves, hot chilli",
-    category: "steak",
+    category: "steaked",
     rating: 4.2,
   },
 ]

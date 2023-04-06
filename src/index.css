@@ -42,18 +42,13 @@ section {
   @apply bg-fola-800 dark:bg-fola-500
 }
 
-.chefs .member:hover .member-info {
-  @apply opacity-100 transition-[0.4s];
+
+.chef-gradient {
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 20%,
-    rgba(0, 212, 255, 0) 100%
+    hsla(var(--hue), 100%, 3%, 0.9) 0%,
+    hsla(var(--hue), 100%, 3%, 0.8) 20%,
+    hsla(var(--hue), 100%, 3%, 0.1) 100%
   );
 }
-.chefs .member:hover .member-info-content {
-  @apply transition-[bottom] duration-[0.4s] bottom-[60px];
-}
-.chefs .member:hover .social {
-  @apply transition-[bottom] duration-[ease-in-out] delay-[0.4s] bottom-0;
-}
+

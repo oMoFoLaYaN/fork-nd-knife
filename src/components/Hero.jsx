@@ -1,7 +1,6 @@
 import React from 'react'
 import { layout } from '../style'
 import { hero, heroed } from '../assets'
-import { heroButton } from '../constants'
 import Button from './Button'
 
 const Hero = () => {
@@ -15,14 +14,15 @@ const Hero = () => {
           Welcome to <span className='text-fola-400'>Fork nd Knife</span>
         </h1>
         <h2 className='mt-2 md:text-xl text-neutral-200 text-lg leading-6'>You can only use fork and knife, Even for water!</h2>
-        {heroButton.map((heroBtn) => (
-            <div key={heroBtn.id} className="mt-8 inline-block overflow-hidden whitespace-nowrap">
-              <Button
-              id={heroBtn.id}
-              name={heroBtn.name}
-              />
+       
+      <div className="m-8 inline-block md:space-x-4 space-y-3">
+      <Button className={`dark:bg-fola-600 border-2 border-fola-500 dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 `}>
+       Menu
+      </Button>
+      <Button className={`bg-transparent border-2 border-fola-500 hover:bg-fola-700/40`}>
+       Book Table
+       </Button>
             </div>   
-         ))}
       </div>
 
       <div

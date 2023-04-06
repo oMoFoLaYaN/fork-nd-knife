@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-const Button = (props) => {
+const Button = ({ children, className, ...rest }) => {
   return (
-    <a
-      href={`#${props.id}`}
-      className="inline-block text-white uppercase text-sm font-medium tracking-normal duration-300 mx-3 px-6 py-2 rounded-md border-2 border-solid border-fola-400 hover:text-white"
+    <button
+      className={`text-white focus:ring-4 focus:outline-none focus:ring-fola-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:focus:ring-fola-800 ${className}`}
+      {...rest}
     >
-      {props.name}
-    </a>
+      {children}
+    </button>
   );
 };
 

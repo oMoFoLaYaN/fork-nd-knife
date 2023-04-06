@@ -45,7 +45,9 @@ const Header = () => {
           <i className="bi bi-list mobile-nav-toggle" />
         </nav>
         <div className=" hidden lg:flex">
-        <Button name="buy"/>
+      <Button className={`bg-transparent border-2 border-fola-500 hover:bg-fola-700/40`}>
+       Book
+       </Button>
         </div>
         <Theme
         color="text-fola-900 dark:text-fola-100"

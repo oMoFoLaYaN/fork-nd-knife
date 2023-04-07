@@ -423,3 +423,57 @@ export const chefs = [
     linkedin: 'http://www.linkedin.com',
   },
 ]
+
+export const footerLinks = [
+  {
+    title: "About",
+    links: [
+      {
+        name: "About Us",
+        link: "https://www.cruise.com/about-us/",
+      },
+      {
+        name: "Features",
+        link: "https://www.cruise.com/featues/",
+      },
+      {
+        name: "New & Blog",
+        link: "https://www.cruise.com/news-&-blogs/",
+      },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      {
+        name: "Team",
+        link: "https://www.cruise.com/team/",
+      },
+      {
+        name: "Plan & Pricing",
+        link: "https://www.cruise.com/plan-&-pricing/",
+      },
+      {
+        name: "Become a member",
+        link: "https://www.cruise.com/become-a-member/",
+      },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      {
+        name: "FAQs",
+        link: "https://www.cruise.com/FAQs/",
+      },
+      {
+        name: "Support Center",
+        link: "https://www.cruise.com/support-center/",
+      },
+      {
+        name: "Contact Us",
+        link: "https://www.cruise.com/contact-us/",
+      },
+    ],
+  },
+];

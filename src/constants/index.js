@@ -35,16 +35,26 @@ export const navLinks = [
   },
 ];
 
-export const tops = [
+export const contacts = [
   {
-    id: "phone",
-    name: "07089409288",
-    icon: "bi bi-phone",
+    id: "location",
+    name: "Irawo studio, Aketa",
+    icon: "bi bi-geo-alt",
   },
   {
     id: "open",
     name: "Mon-Sat: 11AM - 23PM",
     icon: "bi bi-clock",
+  },
+  {
+    id: "email",
+    name: "viceinvincible@gmail.com",
+    icon: "bi bi-envelope-at",
+  },
+  {
+    id: "phone",
+    name: "+234 708 940 9288",
+    icon: "bi bi-phone",
   },
 ];
 

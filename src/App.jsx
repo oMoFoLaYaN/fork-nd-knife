@@ -1,4 +1,4 @@
-import { Topbar, Header, Hero, About, Why, Menu, Specials, Events, Reservation, Testimonials, Gallery, Chefs, Contact } from "./components";
+import { Topbar, Header, Hero, About, Why, Menu, Specials, Events, Reservation, Testimonials, Gallery, Chefs, Contact, Newsletter } from "./components";
 
 const App = () => (
     <>
@@ -15,6 +15,7 @@ const App = () => (
         <Gallery/>
         <Chefs/>
         <Contact/>
+        <Newsletter/>
     </>
 );
 

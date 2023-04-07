@@ -13,7 +13,6 @@ function Textarea(props) {
         type={props.type}
         name={props.name}
         id={props.id}
-        defaultValue=""
         rows="6"
         className="block  rounded-lg py-2.5 px-2 w-full text-sm text-fola-990 bg-transparent border-2 border-fola-950/20 appearance-none dark:text-white dark:border-fola-100/20 dark:focus:border-fola-500 focus:outline-none focus:ring-2 ring-fola-200/60 dark:ring-fola-100/50 focus:border-fola-500 peer"
         placeholder=" "

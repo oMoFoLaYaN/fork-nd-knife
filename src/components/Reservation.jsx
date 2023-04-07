@@ -64,14 +64,16 @@ const Reservation = () => {
               name="message"
               id="message"
               required
+              defaultValue=''
               label="Message"
             />
-
+          <div className="text-center">
           <Button className={`dark:bg-fola-600 dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 `}>
             Submit
           </Button>
+          </div>
         </form>
-
+          
 
       </div>
     </section>

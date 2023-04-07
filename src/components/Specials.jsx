@@ -20,7 +20,7 @@ const handleTabClick = (tabIndex) => {
       <div className="w-full lg:w-fit lg:mr-6">
         <ul className="flex flex-col">
         {dishes.map((dish, index) => (
-          <li key={index} className={`duration-300 text-left font-semibold text-base ${activeTab === index ? "bg-fola-500 text-fola-990" : "text-fola-990 dark:text-fola-50 hover:text-fola-700 hover:dark:text-fola-300 "} p-3 pl-5 lg:pr-5 rounded-none lg:border-r-2 lg:border-r-fola-400 border-solid`} onClick={() => handleTabClick(index)}>
+          <li key={index} className={`duration-300 text-left font-semibold text-base ${activeTab === index ? "bg-fola-500 text-fola-990" : "text-fola-990 dark:text-fola-50 hover:text-fola-700 hover:dark:text-fola-300 "} p-3 pl-5 lg:pr-5 rounded-none lg:border-r-2 lg:border-r-fola-400 lg:rounded-l-xl border-solid`} onClick={() => handleTabClick(index)}>
             <button className="" href="#">
               {dish.name}
             </button>

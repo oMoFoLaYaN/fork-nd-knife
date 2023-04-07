@@ -1,120 +1,92 @@
-import React from 'react'
+import { layout } from "../style"
+import { contacts } from "../constants"
+import Input from './Input'
+import Textarea from './Textarea'
+import Button from './Button'
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact">
-  <div className="container" data-aos="fade-up">
-    <div className="section-title">
-      <h2>Contact</h2>
-      <p>Contact Us</p>
-    </div>
-  </div>
-  <div data-aos="fade-up">
-  <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.6911373577276!2d3.2456860771756397!3d6.676066925126511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1680832644264!5m2!1sen!2sng"
-  width={600}
-  height={450}
-  style={{ border: 0 }}
-  allowFullScreen=""
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
+    <section id="contact" className="contact bg-fola-50 dark:bg-fola-950">
+      <div className={layout.container}>
+        <div className="pb-10">
+          <h2 className={layout.sectionTitle}>contact</h2>
+          <p className={layout.sectionSubtitle}>Get in touch with us!</p>
+        </div>
+      </div>
+      <div >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.6911373577276!2d3.2456860771756397!3d6.676066925126511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1680832644264!5m2!1sen!2sng"
+          style={{ border: 0, width: "100%", height: 350 }}
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
 
-  </div>
-  <div className="container" data-aos="fade-up">
-    <div className="row mt-5">
-      <div className="col-lg-4">
-        <div className="info">
-          <div className="address">
-            <i className="bi bi-geo-alt" />
-            <h4>Location:</h4>
-            <p>A108 Adam Street, New York, NY 535022</p>
+      </div>
+      <div className={layout.container}>
+        <div className={`grid grid-cols-1 lg:grid-cols-3 md:gap-6 mt-12`}>
+          <div className="w-full col-span-1">
+            <div className="w-full">
+              {contacts.map((contact, index) => (
+                <div key={index} className={index === 0 ? "mt-0" : "mt-10"}>
+                  <i className={`${contact.icon} text-2xl text-fola-950 dark:text-fola-50 float-left w-11 h-11 flex justify-center items-center transition-all duration-300 ease-in-out`} />
+                  <h4 className="text-lg text-fola-950 dark:text-fola-50 font-medium mb-[5px] pl-[60px] pr-0 py-0 capitalize">{`${contact.id}:`}</h4>
+                  <p className="text-sm text-[#bab3a6] mb-0 pl-[60px] pr-0 py-0">{contact.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="open-hours">
-            <i className="bi bi-clock" />
-            <h4>Open Hours:</h4>
-            <p>
-              Monday-Saturday:
-              <br />
-              11:00 AM - 2300 PM
-            </p>
-          </div>
-          <div className="email">
-            <i className="bi bi-envelope" />
-            <h4>Email:</h4>
-            <p>info@example.com</p>
-          </div>
-          <div className="phone">
-            <i className="bi bi-phone" />
-            <h4>Call:</h4>
-            <p>+1 5589 55488 55s</p>
+          <div className="w-full mt-12 lg:mt-0 col-span-2">
+            <form
+              action=""
+              method="post"
+              role="form"
+              className="php-email-form"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+              <Input
+                type="text"
+                name="name"
+                id="name"
+                required
+                label="Name"
+              />
+              <Input
+                type="email"
+                name="email"
+                id="email"
+                required
+                label="Email"
+              />
+              </div>
+              <div className="mt-0 md:mt-6">
+              <Input
+                type="text"
+                name="subject"
+                id="subject"
+                required
+                label="Subject"
+              />
+                        <Textarea
+              type="text"
+              name="message"
+              id="message"
+              required
+              defaultValue=''
+              label="Message"
+            />
+              </div>
+
+              <div className="text-center">
+              <Button className={`dark:bg-fola-600 dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 `}>
+            Send Message
+          </Button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <div className="col-lg-8 mt-5 mt-lg-0">
-        <form
-          action="forms/contact.php"
-          method="post"
-          role="form"
-          className="php-email-form"
-        >
-          <div className="row">
-            <div className="col-md-6 form-group">
-              <input
-                type="text"
-                name="name"
-                className="form-control"
-                id="name"
-                placeholder="Your Name"
-                required=""
-              />
-            </div>
-            <div className="col-md-6 form-group mt-3 mt-md-0">
-              <input
-                type="email"
-                className="form-control"
-                name="email"
-                id="email"
-                placeholder="Your Email"
-                required=""
-              />
-            </div>
-          </div>
-          <div className="form-group mt-3">
-            <input
-              type="text"
-              className="form-control"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              required=""
-            />
-          </div>
-          <div className="form-group mt-3">
-            <textarea
-              className="form-control"
-              name="message"
-              rows={8}
-              placeholder="Message"
-              required=""
-              defaultValue={""}
-            />
-          </div>
-          <div className="my-3">
-            <div className="loading">Loading</div>
-            <div className="error-message" />
-            <div className="sent-message">
-              Your message has been sent. Thank you!
-            </div>
-          </div>
-          <div className="text-center">
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
   )
 }

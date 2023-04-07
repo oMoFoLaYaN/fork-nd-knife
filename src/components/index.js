@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import Specials from "./Specials";
 import Reservation from "./Reservation";
 import Gallery from "./Gallery";
+import Newsletter from "./Newsletter";
 
 export {
     Header,
@@ -28,4 +29,5 @@ export {
     Specials,
     Reservation,
     Gallery,
+    Newsletter,
 };

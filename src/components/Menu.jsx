@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { filters, menus } from '../constants'
 import { layout } from '../style'
 import { motion, AnimatePresence, easeInOut } from "framer-motion"
+import Button from './Button'
 
 const Menu = () => {
   const [filter, setFilter] = useState('all');
@@ -51,7 +52,10 @@ const Menu = () => {
                     <i className='bi bi-star cursor-pointer sm:text-md text-sm text-fola-700 dark:text-fola-500' />
                     <p className='relative ml-1 lg:ml-3 sm:text-md text-sm text-fola-900 dark:text-fola-300'>{menu.rating}</p>
                   </div>
-                  <a href="#" className='px-4 py-1 bg-fola-400 text-fola-900 font-semibold rounded-b-3xl relative -bottom-7 rounded-t-sm border-t-fola-950 dark:border-t-fola-150'>Eat This</a>
+
+                  <Button className={`dark:bg-fola-600  dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 x-4 py-1 text-fola-900 font-semibold rounded-b-3xl relative -bottom-7 rounded-t-sm border-t-fola-950 dark:border-t-fola-150`}>
+                    Eat
+                  </Button>
                 </div>
 
               </motion.div>

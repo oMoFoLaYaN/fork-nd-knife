@@ -13,6 +13,7 @@ import Specials from "./Specials";
 import Reservation from "./Reservation";
 import Gallery from "./Gallery";
 import Newsletter from "./Newsletter";
+import Scroll from "./Scroll";
 
 export {
     Header,
@@ -30,4 +31,5 @@ export {
     Reservation,
     Gallery,
     Newsletter,
+    Scroll,
 };

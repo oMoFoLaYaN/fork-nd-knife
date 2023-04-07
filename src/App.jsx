@@ -13,8 +13,8 @@ const App = () => {
   return (
     <>
       {loading ? (
-        <div id="preloader" className="fixed bg-fola-100 dark:bg-fola-900 flex items-center justify-center z-[9999] inset-0">
-<svg className="animate-spin ease-in-out w-16 fill-fola-900 dark:fill-fola-200" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 380.721 380.721"
+        <div id="preloader" className="fixed bg-fola-990 flex items-center justify-center z-[9999] inset-0">
+<svg className="animate-spin ease-in-out w-16 fill-fola-400" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 380.721 380.721"
 	 xml:space="preserve">
 
 <g>

@@ -24,7 +24,7 @@ const Topbar = () => {
     <div id="topbar" className={`${topbar} items-center flex z-50 top-0 inset-x-0 h-10 text-sm transition-all duration-500`}>
   <div className={`${layout.container} flex justify-center md:justify-start`} >
     {contacts.filter((top) => top.id === "phone" || top.id === "open").map((top, index) => (
-    <div key={top.id} className="flex items-center mx-2">
+    <div key={top.id} className="flex items-center mx-2 text-[0.68rem] sm:text-sm">
       <i className={`${top.icon} flex items-center mx-2 text-fola-400`}/>
         <span className="text-white">{top.name}</span>
     </div>

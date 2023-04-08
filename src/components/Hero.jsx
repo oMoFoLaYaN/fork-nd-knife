@@ -15,7 +15,7 @@ const Hero = () => {
             <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
         </a>
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none capitalize md:text-5xl lg:text-6xl text-white">Looking to invest in a world of flavor?</h1>
-        <p class="mb-8 text-lg font-normal text-fola-50 lg:text-xl sm:px-16 xl:px-48">Our restaurant has got you covered! Come explore the potential of taste and see what mouth-watering opportunities we have in store for you.</p>
+        <p class="mb-8 text-lg font-normal text-fola-50 lg:text-xl sm:px-16 xl:px-48">Fork nd Knife has got you covered! Come explore the potential of taste and see what mouth-watering opportunities we have in store for you.</p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-fola-700 hover:bg-fola-800 focus:ring-4 focus:ring-fola-300 dark:focus:ring-fola-900">
                 Book Table <i class="bi bi-arrow-down ml-2"></i> </a>

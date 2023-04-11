@@ -15,7 +15,7 @@ const Contact = () => {
       </div>
       <div >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.6911373577276!2d3.2456860771756397!3d6.676066925126511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1680832644264!5m2!1sen!2sng"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5179237457787!2d4.520582915216858!3d7.518345294577285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103830df3737c8a9%3A0x62755a792d6a365b!2sObafemi%20Awolowo%20University!5e0!3m2!1sen!2sng!4v1681177321285!5m2!1sen!2sng"
           style={{ border: 0, width: "100%", height: 350 }}
           allowFullScreen={true}
           loading="lazy"
@@ -44,43 +44,43 @@ const Contact = () => {
               className="php-email-form"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
-              <Input
-                type="text"
-                name="name"
-                id="name"
-                required
-                label="Name"
-              />
-              <Input
-                type="email"
-                name="email"
-                id="email"
-                required
-                label="Email"
-              />
+                <Input
+                  type="text"
+                  name="conName"
+                  id="conName"
+                  required
+                  label="Name"
+                />
+                <Input
+                  type="email"
+                  name="conEmail"
+                  id="conEmail"
+                  required
+                  label="Email"
+                />
               </div>
               <div className="mt-0 md:mt-6">
-              <Input
-                type="text"
-                name="subject"
-                id="subject"
-                required
-                label="Subject"
-              />
-                        <Textarea
-              type="text"
-              name="message"
-              id="message"
-              required
-              defaultValue=''
-              label="Message"
-            />
+                <Input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  required
+                  label="Subject"
+                />
+                <Textarea
+                  type="text"
+                  name="conMessage"
+                  id="conMessage"
+                  required
+                  defaultValue=''
+                  label="Message"
+                />
               </div>
 
               <div className="text-center">
-              <Button className={`dark:bg-fola-600 dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 `}>
-            Send Message
-          </Button>
+                <Button className={`dark:bg-fola-600 dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 `}>
+                  Send Message
+                </Button>
               </div>
             </form>
           </div>

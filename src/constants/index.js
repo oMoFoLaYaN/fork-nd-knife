@@ -38,7 +38,7 @@ export const navLinks = [
 export const contacts = [
   {
     id: "location",
-    name: "Irawo studio, Aketa",
+    name: "Obafemi Awolowo University, Ile-ife",
     icon: "bi bi-geo-alt",
   },
   {
@@ -48,7 +48,7 @@ export const contacts = [
   },
   {
     id: "email",
-    name: "viceinvincible@gmail.com",
+    name: "fork-nd-knife@gmail.com",
     icon: "bi bi-envelope-at",
   },
   {

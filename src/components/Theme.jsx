@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Theme = ({className}) => {
+const Theme = ({ className }) => {
   const [theme, setTheme] = useState("null");
   const [icon, setIcon] = useState(false);
 
@@ -27,9 +27,8 @@ const Theme = ({className}) => {
   return (
     <button className="" onClick={handleThemeSwitch}>
       <i
-        className={`${icon ? "bi bi-brightness-high" : "bi bi-moon"} text-lg ${
-          className
-        }`}
+        className={`${icon ? "bi bi-brightness-high" : "bi bi-moon"} text-lg ${className
+          }`}
         id="theme-button"
       />
     </button>

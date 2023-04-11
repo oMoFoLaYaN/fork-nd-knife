@@ -22,7 +22,7 @@ export const navLinks = [
     title: "Events",
   },
   {
-    id: "Chefs",
+    id: "chefs",
     title: "Chefs",
   },
   {

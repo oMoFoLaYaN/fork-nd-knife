@@ -29,7 +29,6 @@ const Header = () => {
     const offset = 70;
     const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
     window.scrollTo({ top: yCoordinate - offset, behavior: 'smooth' });
-    setToggle(!toggle)
   };
 
   const [header, setHeader] = useState("top-10");
@@ -66,7 +65,7 @@ const Header = () => {
             <ul key={nav.id} className="flex items-center m-0 p-0">
               <li className="relative">
                 <a className={`flex items-center justify-between whitespace-nowrap duration-300 text-sm pl-[30px] pr-0 py-2.5 text-fola-990 
-                dark:text-white dark:hover:text-fola-200 hover:text-fola-800 ${activeSection === nav.id ? 'text-amber-400 dark:text-amber-200' : ''} relative`}
+                dark:text-white dark:hover:text-fola-200 hover:text-fola-800 ${activeSection === nav.id ? 'text-fola-400 dark:text-fola-200' : ''} relative`}
                   onClick={() => handleScrollTo(`#${nav.id}`)}>
                   {nav.title}
                 </a>
@@ -103,7 +102,10 @@ const Header = () => {
               <ul key={index} className="list-none flex justify-start items-start flex-1 flex-col my-8 mx-8">
                 <li className={`font-poppins font-medium capitalize cursor-pointer text-base`}
                 >
-                  <a className={`${activeSection === nav.id ? 'text-amber-400 dark:text-amber-200' : ''} relative`} onClick={() => handleScrollTo(`#${nav.id}`)}>{nav.title}</a>
+                  <a className={`${activeSection === nav.id ? 'text-fola-400 dark:text-fola-200' : ''} relative`} onClick={() => {
+                    setToggle(!toggle);
+                    handleScrollTo(`#${nav.id}`);
+                  }}>{nav.title}</a>
                 </li>
 
               </ul>

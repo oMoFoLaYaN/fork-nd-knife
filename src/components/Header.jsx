@@ -64,8 +64,8 @@ const Header = () => {
           {navLinks.map((nav) => (
             <ul key={nav.id} className="flex items-center m-0 p-0">
               <li className="relative">
-                <a className={`flex items-center justify-between whitespace-nowrap duration-300 text-sm pl-[30px] pr-0 py-2.5 text-fola-990 
-                dark:text-white dark:hover:text-fola-200 hover:text-fola-800 ${activeSection === nav.id ? 'text-fola-400 dark:text-fola-200' : ''} relative`}
+                <a className={`flex items-center justify-between whitespace-nowrap duration-300 text-sm pl-[30px] pr-0 py-2.5  
+                 dark:hover:text-fola-200 hover:text-fola-800 ${activeSection === nav.id ? 'text-fola-400 dark:text-fola-300 underline decoration-2 decoration-fola-600 underline-offset-2' : 'text-fola-990 dark:text-fola-50'} relative`}
                   onClick={() => handleScrollTo(`#${nav.id}`)}>
                   {nav.title}
                 </a>
@@ -99,7 +99,7 @@ const Header = () => {
               onClick={() => setToggle(!toggle)}
             />
             {navLinks.map((nav, index) => (
-              <ul key={index} className="list-none flex justify-start items-start flex-1 flex-col my-8 mx-8">
+              <ul key={index} className="list-none flex justify-start items-start flex-1 flex-col my-6">
                 <li className={`font-poppins font-medium capitalize cursor-pointer text-base`}
                 >
                   <a className={`${activeSection === nav.id ? 'text-fola-400 dark:text-fola-200' : ''} relative`} onClick={() => {

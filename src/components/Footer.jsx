@@ -6,20 +6,21 @@ const Footer = () => {
   const socials = [
     {
       icon: "twitter",
-      link: "https://www.facebook.com/",
-    },
-    {
-      icon: "instagram",
       link: "https://www.twitter.com/",
-    },
-    {
-      icon: "facebook",
-      link: "https://www.instagram.com/",
     },
     {
       icon: "linkedin",
       link: "https://www.linkedin.com/",
     },
+    {
+      icon: "instagram",
+      link: "https://www.instagram.com/",
+    },
+    {
+      icon: "facebook",
+      link: "https://www.facebook.com/",
+    },
+
   ];
 
   return (
@@ -38,7 +39,7 @@ const Footer = () => {
               ))}
               <div className="mt-8">
                 {socials.map((social, index) => (
-                  <a key={index} href={social.link} className="text-lg inline-block leading-none text-center w-9 h-9 duration-300 mr-1 px-0 py-2 hover:text-fola-900 dark:hover:text-fola-200 hover:no-underline">
+                  <a key={index} href={social.link} target="_blank" className="text-lg inline-block leading-none text-center w-9 h-9 duration-300 mr-1 px-0 py-2 hover:text-fola-900 dark:hover:text-fola-200 hover:no-underline">
                     <i className={`bi bi-${social.icon}`} />
                   </a>
                 ))}

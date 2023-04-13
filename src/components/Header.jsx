@@ -102,7 +102,7 @@ const Header = () => {
               <ul key={index} className="list-none flex justify-start items-start flex-1 flex-col my-6">
                 <li className={`font-poppins font-medium capitalize cursor-pointer text-base`}
                 >
-                  <a className={`${activeSection === nav.id ? 'text-fola-400 dark:text-fola-200' : ''} relative`} onClick={() => {
+                  <a className={`${activeSection === nav.id ? 'text-fola-400 dark:text-fola-300 underline decoration-2 decoration-fola-600 underline-offset-2' : 'text-fola-990 dark:text-fola-50'} relative`} onClick={() => {
                     setToggle(!toggle);
                     handleScrollTo(`#${nav.id}`);
                   }}>{nav.title}</a>

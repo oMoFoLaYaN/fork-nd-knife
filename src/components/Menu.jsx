@@ -42,7 +42,7 @@ const filterClick = (category) => {
                   layout
                   className="w-full lg:w-5/12 my-8 lg:mx-8 px-5 py-3 h-fit bg-fola-100 dark:bg-fola-950 rounded-xl clay">
                   <div className='flex flex-row justify-between'>
-                    <img src={menu.img} className="menu-img w-24 relative -top-10 right-0 xs:-right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900 " alt={menu.name} />
+                    <img src={menu.img} className="menu-img w-24 relative -top-10 right-0 xs:-right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900" alt={menu.name} />
                     <i className='bi bi-heart-fill px-1 py-3 text-xl cursor-pointer text-red-600 dark:text-red-400'></i>
                   </div>
                   <div className="menu-content flex flex-row relative -top-5 justify-between">

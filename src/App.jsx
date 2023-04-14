@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
+
 import { Topbar, Header, Hero, About, Why, Menu, Specials, Events, Reservation, Testimonials, Gallery, Chefs, Contact, Newsletter, Footer, Scroll } from "./components";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  
 
-  useEffect(() => {
+ useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
   }, []);
 
+
+  
   return (
     <>
       {loading ? (

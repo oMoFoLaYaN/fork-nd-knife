@@ -60,7 +60,7 @@ const Header = () => {
         <h1 className="text-2xl sm:text-3xl leading-none font-light tracking-normal uppercase m-0 p-0 font-sans mr-auto lg:mr-0">
           <a href="index.html" className="dark:text-white text-fola-990 font-display">Fork nd Knife</a>
         </h1>
-        <nav id="navbar" className="relative hidden lg:flex flex-wrap items-center justify-between px-0 py-2 lg:order-0">
+        <nav id="navbar" className="relative hidden lg:flex flex-wrap items-center justify-between px-0 py-2 lg:mr-11 xl:mr-0 lg:order-0">
           {navLinks.map((nav) => (
             <ul key={nav.id} className="flex items-center m-0 p-0">
               <li className="relative">
@@ -73,16 +73,18 @@ const Header = () => {
 
             </ul>
           ))}
-          <div className="ml-5 xl:ml-40">
+          <div className="ml-5 xl:mx-20">
             <Button className={`bg-transparent border-2 border-fola-500 hover:bg-fola-700/40`}>
               Book
             </Button>
           </div>
 
         </nav>
+        <div className="lg:ml-4 lg:absolute lg:top-5 lg:right-3 xl:right-20">
         <Theme
           className="text-fola-990 dark:text-fola-100 -mr-7 sm:mr-7"
         />
+        </div>
         <i
           className={`lg:hidden w-7 h-7 text-xl text-fola-990 dark:text-fola-100 cursor-pointer ml-10 object-contain ${toggle ? close : menu
             }`}

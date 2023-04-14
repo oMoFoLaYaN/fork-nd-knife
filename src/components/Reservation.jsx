@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import { layout } from '../style'
 import Button from './Button'
 import Input from './Input'
@@ -6,7 +6,7 @@ import Textarea from './Textarea'
 
 const Reservation = () => {
   return (
-    <section id="book-a-table" className="book-a-table bg-fola-50 dark:bg-fola-950 ">
+    <section id="bookTable" className="bg-fola-50 dark:bg-fola-950 ">
       <div className={layout.container}>
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>Reservation</h2>

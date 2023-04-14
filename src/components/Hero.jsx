@@ -1,8 +1,9 @@
-import React from 'react'
+
 import { layout } from '../style'
 import { hero } from '../assets'
 
 const Hero = () => {
+
   return (
     <section id="home" style={{ backgroundImage: `url(${hero})` }} className={`w-full h-screen bg-right bg-cover relative p-0 before:content-[' '] before:bg-black before:bg-opacity-40 before:absolute before:inset-0 flex items-center`}>
       <div
@@ -16,9 +17,10 @@ const Hero = () => {
             <h1 class="mb-4 sm:text-4xl text-xl xs:text-3xl font-extrabold tracking-tight leading-none capitalize md:text-5xl lg:text-6xl text-white">Looking to invest in a world of flavor?</h1>
             <p class="mb-8 sm:text-lg text-sm font-normal text-fola-50 lg:text-xl sm:px-16 xl:px-48">Fork nd Knife has got you covered! Come explore the potential of taste and see what mouth-watering opportunities we have in store for you.</p>
             <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-              <a href="#" class="inline-flex justify-center items-center py-3 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-fola-700 hover:bg-fola-800 focus:ring-4 focus:ring-fola-300 dark:focus:ring-fola-900">
+              <a href="#bookTable" class="inline-flex justify-center items-center py-3 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-fola-700 hover:bg-fola-800 focus:ring-4 focus:ring-fola-300 dark:focus:ring-fola-900">
                 Book Table <i class="bi bi-arrow-down ml-2"></i> </a>
-              <a href="#" class="inline-flex justify-center items-center py-2 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center rounded-lg border border-fola-300 hover:bg-fola-100 focus:ring-4 focus:ring-fola-100 text-fola-50 hover:text-fola-800">
+              <a href="#menu"
+             class="inline-flex justify-center items-center py-2 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center rounded-lg border border-fola-300 hover:bg-fola-100 focus:ring-4 focus:ring-fola-100 text-fola-50 hover:text-fola-800">
                 <svg
                   className='w-6 mr-2 fill-fola-600'
                   xmlns="http://www.w3.org/2000/svg"

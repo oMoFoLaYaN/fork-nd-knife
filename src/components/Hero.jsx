@@ -5,7 +5,7 @@ import { hero } from '../assets'
 const Hero = () => {
   const handleScrollTo = (selector) => {
     const element = document.querySelector(selector);
-    const offset = 70;
+    const offset = 30;
     const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
     window.scrollTo({ top: yCoordinate - offset, behavior: 'smooth' });
   };

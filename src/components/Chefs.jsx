@@ -13,7 +13,7 @@ const Chefs = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>Chefs</h2>
           <p className={layout.sectionSubtitle}>Our culinary wizards</p>
@@ -26,7 +26,7 @@ const Chefs = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center">
+            >
             {chefs.map((chef, index) => (
               <div key={index} className=" member group text-center relative overflow-hidden mb-5 rounded-xl">
                 <img src={chef.img} className="h-auto max-w-full rounded-xl" alt="" />

@@ -13,7 +13,7 @@ const Testimonials = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>Testimonials</h2>
           <p className={layout.sectionSubtitle}>what's the buzz 'bout us this week?</p>
@@ -27,7 +27,7 @@ const Testimonials = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center">
+            >
             <Swiper
               style={{
                 "--swiper-pagination-bullet-horizontal-gap": "6px",

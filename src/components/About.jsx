@@ -12,7 +12,7 @@ const About = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center"
+        
       >
         <div className={layout.row}>
           <div className="lg:grow-0 lg:shrink-0 lg:basis-auto lg:px-8 lg:w-1/2 order-1 lg:order-2" data-aos="zoom-in-right">

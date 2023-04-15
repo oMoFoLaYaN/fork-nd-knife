@@ -10,7 +10,7 @@ const Newsletter = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-fola-950 sm:text-4xl dark:text-fola-50 capitalize">
             Stay in the Loop Today!

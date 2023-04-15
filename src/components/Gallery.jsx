@@ -25,7 +25,7 @@ const Gallery = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className="section-title pb-10">
           <h2 className={layout.sectionTitle}>Gallery</h2>
           <p className={layout.sectionSubtitle}>Picture-perfect moments from our restaurant</p>
@@ -43,7 +43,7 @@ const Gallery = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
+            
           >
             {gallery.map((img, index) => (
               <SwiperSlide key={index} className="bg-cover center">
@@ -68,7 +68,7 @@ const Gallery = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
+            
           >
             {gallery.map((img, index) => (
               <SwiperSlide key={index} className={`bg-cover center opacity-60`}>

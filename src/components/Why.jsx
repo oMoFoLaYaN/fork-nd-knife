@@ -12,7 +12,7 @@ const Why = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className="section-title pb-10" data-aos="fade-left">
           <h2 className={layout.sectionTitle}>why us</h2>
           <p className={layout.sectionSubtitle}>reason to count on us</p>

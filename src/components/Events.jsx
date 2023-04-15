@@ -16,7 +16,7 @@ const Events = () => {
         data-aos-easing="ease-in-out"
 
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>events</h2>
           <p className={layout.sectionSubtitle}>
@@ -56,7 +56,7 @@ const Events = () => {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                     data-aos-once="true"
-                    data-aos-anchor-placement="top-center">
+                    >
                     <img
                       src={party.img}
                       className="rounded-md"
@@ -70,7 +70,7 @@ const Events = () => {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                     data-aos-once="true"
-                    data-aos-anchor-placement="top-center">
+                    >
                     <h3 className="font-semibold text-[26px] text-fola-500">
                       {party.title}
                     </h3>

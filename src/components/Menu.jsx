@@ -22,7 +22,7 @@ const Menu = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
-          data-aos-anchor-placement="top-center">
+          >
           <div className="section-title pb-10" data-aos="fade-left">
             <h2 className={layout.sectionTitle}>Menu</h2>
             <p className={layout.sectionSubtitle}>check out our forky</p>

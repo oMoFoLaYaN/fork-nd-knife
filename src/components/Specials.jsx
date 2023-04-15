@@ -17,7 +17,7 @@ const Specials = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className="section-title pb-10">
           <h2 className={layout.sectionTitle}>specials</h2>
           <p className={layout.sectionSubtitle}>explore our signature dishes today.</p>
@@ -31,7 +31,7 @@ const Specials = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center">
+            >
             <ul className="flex flex-col">
               {dishes.map((dish, index) => (
                 <li key={index} className={`duration-300 text-left cursor-pointer font-semibold text-base ${activeTab === index ? "bg-fola-500 text-fola-990" : "text-fola-990 dark:text-fola-50 hover:text-fola-700 hover:dark:text-fola-300 "} p-3 pl-5 rounded-none lg:border-r-2 lg:border-r-fola-400 lg:rounded-l-xl border-solid`} onClick={() => handleTabClick(index)}>
@@ -49,7 +49,7 @@ const Specials = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center">
+            >
             <div className="my-5">
               {dishes.map((dish, index) => (
                 <div key={index} className={`${activeTab === index ? "block" : "hidden"}`} id="">

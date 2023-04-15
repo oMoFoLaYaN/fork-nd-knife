@@ -32,7 +32,7 @@ const Footer = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className={layout.container}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
@@ -78,7 +78,7 @@ const Footer = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center">
+        >
         <div className="text-center pt-[30px] dark:text-white text-fola-990">
           © Copyright{" "}
           <strong>

@@ -4,7 +4,7 @@ import { layout } from "../style";
 
 const Why = () => {
   return (
-    <section id="why-us" className="why-us bg-fola-50 dark:bg-fola-950 ">
+    <section id="why-us" className="why-us bg-fola-50 dark:bg-fola-950">
       <div className={layout.container}>
         <div className="section-title pb-10">
           <h2 className={layout.sectionTitle}>why us</h2>

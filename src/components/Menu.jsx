@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { filters, menus } from '../constants'
 import { layout } from '../style'
-import { motion, AnimatePresence, easeInOut } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import Button from './Button'
+
 
 const Menu = () => {
   const [filter, setFilter] = useState('all');

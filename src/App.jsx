@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import { Topbar, Header, Hero, About, Why, Menu, Specials, Events, Reservation, Testimonials, Gallery, Chefs, Contact, Newsletter, Footer, Scroll } from "./components";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  
   
 
  useEffect(() => {
@@ -13,7 +15,7 @@ const App = () => {
   }, []);
 
 
-  
+  AOS.init();
   return (
     <>
       {loading ? (

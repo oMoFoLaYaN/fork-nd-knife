@@ -16,7 +16,6 @@ const Specials = () => {
         data-aos-delay="10"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
         data-aos-once="true"
         data-aos-anchor-placement="top-center">
         <div className="section-title pb-10">
@@ -31,7 +30,6 @@ const Specials = () => {
             data-aos-delay="10"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
             data-aos-once="true"
             data-aos-anchor-placement="top-center">
             <ul className="flex flex-col">
@@ -50,7 +48,6 @@ const Specials = () => {
             data-aos-delay="10"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
             data-aos-once="true"
             data-aos-anchor-placement="top-center">
             <div className="my-5">

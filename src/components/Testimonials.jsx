@@ -11,8 +11,7 @@ const Testimonials = () => {
         data-aos-offset="200"
         data-aos-delay="10"
         data-aos-duration="1000"
-        data-aos-easing="ease-in-out-sine"
-        data-aos-mirror="true"
+        data-aos-easing="ease-in-out"
         data-aos-once="true"
         data-aos-anchor-placement="top-center">
         <div className="pb-10">
@@ -26,8 +25,7 @@ const Testimonials = () => {
             data-aos-offset="200"
             data-aos-delay="100"
             data-aos-duration="1000"
-            data-aos-easing="ease-in-out-sine"
-            data-aos-mirror="true"
+            data-aos-easing="ease-in-out"
             data-aos-once="true"
             data-aos-anchor-placement="top-center">
             <Swiper

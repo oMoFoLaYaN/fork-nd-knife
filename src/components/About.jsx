@@ -10,8 +10,7 @@ const About = () => {
         data-aos-offset="200"
         data-aos-delay="10"
         data-aos-duration="1000"
-        data-aos-easing="ease-in-out-sine"
-        data-aos-mirror="true"
+        data-aos-easing="ease-in-out"
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >

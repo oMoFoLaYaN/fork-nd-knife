@@ -31,7 +31,6 @@ const Footer = () => {
         data-aos-delay="10"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
         data-aos-once="true"
         data-aos-anchor-placement="top-center">
         <div className={layout.container}
@@ -78,7 +77,6 @@ const Footer = () => {
         data-aos-delay="10"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
         data-aos-once="true"
         data-aos-anchor-placement="top-center">
         <div className="text-center pt-[30px] dark:text-white text-fola-990">

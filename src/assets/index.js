@@ -24,6 +24,8 @@ import testimonial2 from "./testimonial2.jpg";
 import testimonial3 from "./testimonial3.jpg";
 import testimonial4 from "./testimonial4.jpg";
 import testimonial5 from "./testimonial5.jpg";
+import testimonial6 from "./testimonial6.jpg";
+import testimonial7 from "./testimonial7.jpg";
 import gallery1 from "./gallery-1.jpg";
 import gallery2 from "./gallery-2.jpg";
 import gallery3 from "./gallery-3.jpg";
@@ -64,6 +66,8 @@ export {
     testimonial3,
     testimonial4,
     testimonial5,
+    testimonial6,
+    testimonial7,
     gallery1,
     gallery2,
     gallery3,

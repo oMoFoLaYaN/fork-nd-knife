@@ -1,4 +1,4 @@
-import { food1, food2, food3, food4, food5, food6, food7, food8, food9, special1, special2, special3, special4, special5, event1, event2, event3, testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8, chef1, chef2, chef3 } from "../assets";
+import { food1, food2, food3, food4, food5, food6, food7, food8, food9, special1, special2, special3, special4, special5, event1, event2, event3, testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, testimonial6, testimonial7, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8, chef1, chef2, chef3 } from "../assets";
 
 export const navLinks = [
   {
@@ -355,13 +355,13 @@ export const testimonials = [
   },
   {
     name: 'Maya Patel',
-    img: testimonial3,
+    img: testimonial6,
     profession: 'Food Blogger',
     review: 'I couldn\'t get enough of the dishes here - each one was more delicious than the last. I\'ll definitely be recommending this restaurant to my readers.'
   },
   {
     name: 'John Smith',
-    img: testimonial2,
+    img: testimonial7,
     profession: 'Tourist',
     review: 'I stumbled upon this restaurant while exploring the city and I\'m so glad I did. The food was amazing and the atmosphere was charming.'
   }

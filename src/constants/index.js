@@ -430,15 +430,15 @@ export const footerLinks = [
     links: [
       {
         name: "About Us",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
       {
         name: "Features",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
       {
         name: "New & Blog",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
     ],
   },
@@ -447,15 +447,15 @@ export const footerLinks = [
     links: [
       {
         name: "Team",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
       {
         name: "Plan & Pricing",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
       {
         name: "Become a member",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
     ],
   },
@@ -464,15 +464,15 @@ export const footerLinks = [
     links: [
       {
         name: "FAQs",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
       {
         name: "Support Center",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
       {
         name: "Contact Us",
-        link: "https:/fork-nd-knife.vercel.app/",
+        link: "#",
       },
     ],
   },

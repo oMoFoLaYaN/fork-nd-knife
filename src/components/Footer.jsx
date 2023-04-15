@@ -59,7 +59,7 @@ const Footer = () => {
                 <ul className="m-0 p-0">
                   {footerlink.links.map((link, index) => (
                     <li key={index} className="flex items-center px-0 pt-2.5">
-                      <i className="bi bi-chevron-double-right dark:text-fola-500 text-fola-600 mr-2" /> <a href={link.link} className="text-fola-990 dark:text-fola-50 transition-[0.3s] inline-block leading-none hover:text-fola-800 dark:hover:text-fola-200">{link.name}</a>
+                      <i className="bi bi-chevron-double-right dark:text-fola-500 text-fola-600 mr-2" /> <a href={link.link} target="_blank" className="text-fola-990 dark:text-fola-50 transition-[0.3s] inline-block leading-none hover:text-fola-800 dark:hover:text-fola-200">{link.name}</a>
                     </li>
                   ))}
                 </ul>

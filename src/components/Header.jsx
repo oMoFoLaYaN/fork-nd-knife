@@ -58,7 +58,7 @@ const Header = () => {
     <header id="header" className={`transition-all duration-500 px-0 py-2 border-b border-solid border-b-neutral-800 ${header} ${color} fixed z-50 inset-x-0 flex items-center`}>
       <div className={` ${layout.container} flex items-center lg:justify-between`}>
         <h1 className="text-2xl sm:text-3xl leading-none font-light tracking-normal uppercase m-0 p-0 font-sans mr-auto lg:mr-0">
-          <a href="index.html" className="dark:text-white text-fola-990 font-display">Fork nd Knife</a>
+          <a href="index.html" className="dark:text-white text-fola-990 hover:text-fola-900 dark:hover:text-fola-300 font-display">Fork nd Knife</a>
         </h1>
         <nav id="navbar" className="relative hidden lg:flex flex-wrap items-center justify-between px-0 py-2 lg:mr-11 xl:mr-0 lg:order-0">
           {navLinks.map((nav) => (
@@ -81,9 +81,9 @@ const Header = () => {
 
         </nav>
         <div className="lg:ml-4 lg:absolute lg:top-5 lg:right-3 xl:right-20">
-        <Theme
-          className="text-fola-990 dark:text-fola-100 -mr-7 sm:mr-7"
-        />
+          <Theme
+            className="text-fola-990 dark:text-fola-100 -mr-7 sm:mr-7"
+          />
         </div>
         <i
           className={`lg:hidden w-7 h-7 text-xl text-fola-990 dark:text-fola-100 cursor-pointer ml-10 object-contain ${toggle ? close : menu

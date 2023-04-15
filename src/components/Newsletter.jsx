@@ -3,13 +3,21 @@ import Button from "./Button"
 const Newsletter = () => {
   return (
     <section className="">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"
+        data-aos="zoom-in"
+        data-aos-offset="200"
+        data-aos-delay="10"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-sine"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center">
         <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-fola-950 sm:text-4xl dark:text-fola-50 capitalize">
             Stay in the Loop Today!
           </h2>
           <p className="mx-auto mb-8 max-w-2xl font-light text-fola-990/70 md:mb-12 sm:text-xl dark:text-fola-100/70">
-            Don't Miss a Beat - Join Our Inner Circle for Roadmap Updates, Exciting Announcements, and Exclusive Discounts!
+            Don't Miss a Beat - Join Our Inner Circle for Menu Updates, Specials Announcements, and Exclusive Events Discounts!
           </p>
           <form action="#">
             <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">

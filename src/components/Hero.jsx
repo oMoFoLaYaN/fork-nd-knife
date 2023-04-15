@@ -20,7 +20,7 @@ const Hero = () => {
               <a href="#bookTable" class="inline-flex justify-center items-center py-3 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-fola-700 hover:bg-fola-800 focus:ring-4 focus:ring-fola-300 dark:focus:ring-fola-900">
                 Book Table <i class="bi bi-arrow-down ml-2"></i> </a>
               <a href="#menu"
-             class="inline-flex justify-center items-center py-2 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center rounded-lg border border-fola-300 hover:bg-fola-100 focus:ring-4 focus:ring-fola-100 text-fola-50 hover:text-fola-800">
+                class="inline-flex justify-center items-center py-2 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center rounded-lg border border-fola-300 hover:bg-fola-100 focus:ring-4 focus:ring-fola-100 text-fola-50 hover:text-fola-800">
                 <svg
                   className='w-6 mr-2 fill-fola-600'
                   xmlns="http://www.w3.org/2000/svg"

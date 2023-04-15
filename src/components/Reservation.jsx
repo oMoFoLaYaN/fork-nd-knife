@@ -7,7 +7,15 @@ import Textarea from './Textarea'
 const Reservation = () => {
   return (
     <section id="bookTable" className="bg-fola-50 dark:bg-fola-950 ">
-      <div className={layout.container}>
+      <div className={layout.container}
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="10"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-sine"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center">
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>Reservation</h2>
           <p className={layout.sectionSubtitle}>Secure your spot with a click</p>

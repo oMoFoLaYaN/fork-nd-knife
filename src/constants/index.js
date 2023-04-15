@@ -430,15 +430,15 @@ export const footerLinks = [
     links: [
       {
         name: "About Us",
-        link: "https://www.cruise.com/about-us/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
       {
         name: "Features",
-        link: "https://www.cruise.com/featues/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
       {
         name: "New & Blog",
-        link: "https://www.cruise.com/news-&-blogs/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
     ],
   },
@@ -447,15 +447,15 @@ export const footerLinks = [
     links: [
       {
         name: "Team",
-        link: "https://www.cruise.com/team/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
       {
         name: "Plan & Pricing",
-        link: "https://www.cruise.com/plan-&-pricing/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
       {
         name: "Become a member",
-        link: "https://www.cruise.com/become-a-member/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
     ],
   },
@@ -464,15 +464,15 @@ export const footerLinks = [
     links: [
       {
         name: "FAQs",
-        link: "https://www.cruise.com/FAQs/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
       {
         name: "Support Center",
-        link: "https://www.cruise.com/support-center/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
       {
         name: "Contact Us",
-        link: "https://www.cruise.com/contact-us/",
+        link: "https:/fork-nd-knife.vercel.app/#/",
       },
     ],
   },

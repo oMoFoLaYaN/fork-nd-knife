@@ -7,7 +7,15 @@ import Button from './Button'
 const Contact = () => {
   return (
     <section id="contact" className="contact bg-fola-50 dark:bg-fola-950">
-      <div className={layout.container}>
+      <div className={layout.container}
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="10"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-sine"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center">
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>contact</h2>
           <p className={layout.sectionSubtitle}>Get in touch with us!</p>
@@ -25,7 +33,15 @@ const Contact = () => {
       </div>
       <div className={layout.container}>
         <div className={`grid grid-cols-1 lg:grid-cols-3 md:gap-6 mt-12`}>
-          <div className="w-full col-span-1">
+          <div className="w-full col-span-1"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center">
             <div className="w-full">
               {contacts.map((contact, index) => (
                 <div key={index} className={index === 0 ? "mt-0" : "mt-10"}>
@@ -36,7 +52,15 @@ const Contact = () => {
               ))}
             </div>
           </div>
-          <div className="w-full mt-12 lg:mt-0 col-span-2">
+          <div className="w-full mt-12 lg:mt-0 col-span-2"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="10"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center">
             <form
               action=""
               method="post"

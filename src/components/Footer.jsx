@@ -25,8 +25,17 @@ const Footer = () => {
 
   return (
     <footer id="footer" className="bg-fola-50 dark:bg-fola-950 text-sm pt-0 pb-[30px] px-0">
-      <div className="footer-top pt-[60px] pb-[30px] px-0 border-t-[#37332a] border-b-[#28251f] border-t border-solid border-b">
-        <div className={layout.container}>
+      <div className="footer-top pt-[60px] pb-[30px] px-0 border-t-[#37332a] border-b-[#28251f] border-t border-solid border-b"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="10"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center">
+        <div className={layout.container}
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
             <div className="footer-info mb-[30px] text-fola-990 dark:text-fola-50">
               <h3 className="text-2xl leading-none font-light uppercase mt-0 mb-5 mx-0 px-0 py-0.5">Fork nd Knife</h3>
@@ -63,7 +72,15 @@ const Footer = () => {
 
 
 
-      <div className={layout.container}>
+      <div className={layout.container}
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="10"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center">
         <div className="text-center pt-[30px] dark:text-white text-fola-990">
           © Copyright{" "}
           <strong>

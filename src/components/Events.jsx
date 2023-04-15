@@ -8,9 +8,17 @@ import "swiper/css/bundle";
 const Events = () => {
   return (
     <section id="events" className="events">
-      <div className={`${layout.container} relative`}>
+      <div className={`${layout.container} relative`}
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="10"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-sine"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center">
         <div className="pb-10">
-          <h2 className={layout.sectionTitle}>specials</h2>
+          <h2 className={layout.sectionTitle}>events</h2>
           <p className={layout.sectionSubtitle}>
             Host Your Next Event with Us
           </p>
@@ -41,14 +49,30 @@ const Events = () => {
             {parties.map((party, index) => (
               <SwiperSlide key={index} className="swiper-slide">
                 <div className={`${layout.row} event-item`}>
-                  <div className="lg:w-5/12 lg:mr-5 lg:basis-auto">
+                  <div className="lg:w-5/12 lg:mr-5 lg:basis-auto"
+                    data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-delay="10"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    data-aos-anchor-placement="top-center">
                     <img
                       src={party.img}
                       className="rounded-md"
                       alt={party.title}
                     />
                   </div>
-                  <div className="lg:w-5/12 lg:ml-5 lg:basis-auto pt-6 lg:pt-0 text-fola-950 dark:text-fola-50">
+                  <div className="lg:w-5/12 lg:ml-5 lg:basis-auto pt-6 lg:pt-0 text-fola-950 dark:text-fola-50"
+                    data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="10"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    data-aos-anchor-placement="top-center">
                     <h3 className="font-semibold text-[26px] text-fola-500">
                       {party.title}
                     </h3>

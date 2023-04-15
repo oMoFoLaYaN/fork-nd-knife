@@ -32,7 +32,7 @@ const Menu = () => {
             <div className="lg:w-full lg:basis-auto mx-auto flex flex-row justify-center">
               {filters.map((filter, index) => (
                 <ul key={index} id="menu-flters" className='text-right xs:text-center mx-0 my-0 p-0'>
-                  <li onClick={(event) => { filterClick(filter.name); event.preventDefault(); }} className={`cursor-pointer ${filter === filter.name ? 'text-red-500' : 'text-fola-600'} capitalize inline-block xs:text-base text-xs font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3`}>{filter.name}
+                  <li onClick={(event) => { filterClick(filter.name); event.preventDefault(); }} className={`cursor-pointer ${filter === filter.name ? 'text-red-500' : 'text-fola-800 dark:text-fola-200 hover:text-fola-500 hover:dark:text-fola-600'} capitalize inline-block xs:text-base text-xs font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3`}>{filter.name}
                   </li>
                 </ul>
               ))}

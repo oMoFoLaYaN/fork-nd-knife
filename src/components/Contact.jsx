@@ -36,7 +36,7 @@ const Contact = () => {
           <div className="w-full col-span-1"
             data-aos="fade-right"
             data-aos-offset="200"
-            data-aos-delay="200"
+            data-aos-delay="10"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out-sine"
             data-aos-mirror="true"

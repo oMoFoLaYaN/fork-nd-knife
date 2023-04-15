@@ -71,14 +71,7 @@ const Footer = () => {
 
 
 
-      <div className={layout.container}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        >
+      <div className={layout.container}>
         <div className="text-center pt-[30px] dark:text-white text-fola-990">
           © Copyright{" "}
           <strong>

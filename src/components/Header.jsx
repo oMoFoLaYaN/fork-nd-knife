@@ -24,6 +24,7 @@ const Header = () => {
 
     return () => observer.disconnect();
   }, []);
+  
   const handleScrollTo = (selector) => {
     const element = document.querySelector(selector);
     const offset = 70;
@@ -74,7 +75,7 @@ const Header = () => {
             </ul>
           ))}
           <div className="ml-5 xl:mx-20">
-            <Button className={`bg-transparent border-2 border-fola-500 hover:bg-fola-700/40`}>
+            <Button onClick={() => handleScrollTo(`#bookTable`)} className={`bg-transparent border-2 border-fola-500 hover:bg-fola-700/40`}>
               Book
             </Button>
           </div>

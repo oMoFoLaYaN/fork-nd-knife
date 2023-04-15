@@ -3,7 +3,12 @@ import { layout } from '../style'
 import { hero } from '../assets'
 
 const Hero = () => {
-
+  const handleScrollTo = (selector) => {
+    const element = document.querySelector(selector);
+    const offset = 70;
+    const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: yCoordinate - offset, behavior: 'smooth' });
+  };
   return (
     <section id="home" style={{ backgroundImage: `url(${hero})` }} className={`w-full h-screen bg-right bg-cover relative p-0 before:content-[' '] before:bg-black before:bg-opacity-40 before:absolute before:inset-0 flex items-center`}>
       <div
@@ -17,16 +22,16 @@ const Hero = () => {
                       data-aos-easing="ease-in-out"
                       data-aos-once="true"
                       >
-            <a href="#specials" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-fola-950 hover:text-fola-100 dark:text-fola-50 rounded-full bg-fola-0 dark:bg-fola-990 dark:bg-opacity-60 bg-opacity-60 hover:bg-fola-200/30 dark:hover:bg-fola-800/40" role="alert">
+            <a onClick={() => handleScrollTo(`#specials`)} class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-fola-950 hover:text-fola-100 dark:text-fola-50 rounded-full bg-fola-0 dark:bg-fola-990 dark:bg-opacity-60 bg-opacity-60 hover:bg-fola-200/30 dark:hover:bg-fola-800/40" role="alert">
               <span class="text-xs bg-fola-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="sm:text-sm text-[0.75rem] font-medium">Specials avaliable!</span>
               <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
             </a>
             <h1 class="mb-4 sm:text-4xl text-xl xs:text-3xl font-extrabold tracking-tight leading-none capitalize md:text-5xl lg:text-6xl text-white">Looking to invest in a world of flavor?</h1>
             <p class="mb-8 sm:text-lg text-sm font-normal text-fola-50 lg:text-xl sm:px-16 xl:px-48">Fork nd Knife has got you covered! Come explore the potential of taste and see what mouth-watering opportunities we have in store for you.</p>
             <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-              <a href="#bookTable" class="inline-flex justify-center items-center py-3 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-fola-700 hover:bg-fola-800 focus:ring-4 focus:ring-fola-300 dark:focus:ring-fola-900">
+              <a onClick={() => handleScrollTo(`#bookTable`)} class="inline-flex justify-center items-center py-3 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-fola-700 hover:bg-fola-800 focus:ring-4 focus:ring-fola-300 dark:focus:ring-fola-900">
                 Book Table <i class="bi bi-arrow-down ml-2"></i> </a>
-              <a href="#menu"
+              <a onClick={() => handleScrollTo(`#menu`)}
                 class="inline-flex justify-center items-center py-2 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center rounded-lg border border-fola-300 hover:bg-fola-100 focus:ring-4 focus:ring-fola-100 text-fola-50 hover:text-fola-800">
                 <svg
                   className='w-6 mr-2 fill-fola-600'

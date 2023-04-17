@@ -31,7 +31,7 @@ const Scroll = () => {
     <div className={`fixed bottom-4 right-4 z-10 ${isVisible ? 'block' : 'hidden'}`}>
       <Button
         onClick={scrollToTop}
-        className="rounded-full text-fola-700 dark:text-fola-500 bg-transparent border-2 border-fola-500 hover:bg-fola-700/40 focus:outline-none focus:ring-2 focus:ring-fola-500 focus:ring-opacity-50"
+        className="rounded-full text-fola-700 dark:text-fola-500 px-2.5 py-2 bg-transparent border-2 border-fola-500 hover:bg-fola-700/40 focus:outline-none focus:ring-2 focus:ring-fola-500 focus:ring-opacity-50"
       >
         <i class="bi bi-arrow-up"></i>
       </Button>

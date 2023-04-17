@@ -3,6 +3,7 @@ import { navLinks } from "../constants";
 import { layout } from "../style";
 import Theme from "./Theme";
 import Button from "./Button";
+import { handleScrollTo } from './HandleScrollTo'
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -24,13 +25,7 @@ const Header = () => {
 
     return () => observer.disconnect();
   }, []);
-  
-  const handleScrollTo = (selector) => {
-    const element = document.querySelector(selector);
-    const offset = 70;
-    const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({ top: yCoordinate - offset, behavior: 'smooth' });
-  };
+
 
   const [header, setHeader] = useState("top-10");
   const [toggle, setToggle] = useState(false);
@@ -58,7 +53,7 @@ const Header = () => {
   return (
     <header id="header" className={`transition-all duration-500 px-0 py-2 border-b border-solid border-b-neutral-800 ${header} ${color} fixed z-50 inset-x-0 flex items-center`}>
       <div className={` ${layout.container} flex items-center lg:justify-between`}>
-        <h1 className="text-2xl sm:text-3xl leading-none font-light tracking-normal uppercase m-0 p-0 font-sans mr-auto lg:mr-0">
+        <h1 className="text-xl xs:text-2xl sm:text-3xl leading-none font-light tracking-normal uppercase m-0 p-0 font-sans mr-auto lg:mr-0">
           <a href="index.html" className="dark:text-white text-fola-990 hover:text-fola-900 dark:hover:text-fola-300 font-display">Fork nd Knife</a>
         </h1>
         <nav id="navbar" className="relative hidden lg:flex flex-wrap items-center justify-between px-0 py-2 lg:mr-11 xl:mr-0 lg:order-0">
@@ -75,7 +70,7 @@ const Header = () => {
             </ul>
           ))}
           <div className="ml-5 xl:mx-20">
-            <Button onClick={() => handleScrollTo(`#bookTable`)} className={`bg-transparent border-2 border-fola-500 hover:bg-fola-700/40`}>
+            <Button onClick={() => handleScrollTo(`#bookTable`)} className={`bg-transparent border-2 px-5 py-2 rounded-lg border-fola-500 hover:bg-fola-700/40`}>
               Book
             </Button>
           </div>

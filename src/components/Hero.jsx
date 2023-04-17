@@ -1,14 +1,9 @@
 
 import { layout } from '../style'
 import { hero } from '../assets'
+import { handleScrollTo } from './HandleScrollTo'
 
 const Hero = () => {
-  const handleScrollTo = (selector) => {
-    const element = document.querySelector(selector);
-    const offset = 30;
-    const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({ top: yCoordinate - offset, behavior: 'smooth' });
-  };
   return (
     <section id="home" style={{ backgroundImage: `url(${hero})` }} className={`w-full h-screen bg-right bg-cover relative p-0 before:content-[' '] before:bg-black before:bg-opacity-40 before:absolute before:inset-0 flex items-center`}>
       <div

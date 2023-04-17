@@ -14,7 +14,7 @@ const Reservation = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"
-        >
+      >
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>Reservation</h2>
           <p className={layout.sectionSubtitle}>Secure your spot with a click</p>
@@ -75,7 +75,7 @@ const Reservation = () => {
             label="Message"
           />
           <div className="text-center">
-            <Button className={`dark:bg-fola-600 dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 `}>
+            <Button className={`dark:bg-fola-600 dark:hover:bg-fola-700 px-5 py-2.5 bg-fola-500 hover:bg-fola-600 rounded-lg`}>
               Submit
             </Button>
           </div>

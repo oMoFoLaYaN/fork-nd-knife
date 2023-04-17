@@ -107,11 +107,11 @@ export const filters = [
   },
   {
     id: 2,
-    name: "steaked",
+    name: "steaky",
   },
   {
     id: 3,
-    name: "veggies",
+    name: "veggy",
   },
   {
     id: 4,
@@ -126,7 +126,7 @@ export const menus = [
     img: food1,
     price: 9.99,
     ingredients: "lettuce, date, oil, scotch bonnet",
-    category: "veggies",
+    category: "veggy",
     rating: 4.4,
   },
   {
@@ -134,7 +134,7 @@ export const menus = [
     img: food2,
     price: 12.50,
     ingredients: "steak, baked potatoes, tomatoes, brocolli",
-    category: "steaked",
+    category: "steaky",
     rating: 4.6,
   },
   {
@@ -146,11 +146,11 @@ export const menus = [
     rating: 4.2,
   },
   {
-    name: "steaked egg",
+    name: "steaky egg",
     img: food4,
     price: 10.99,
     ingredients: "egg, leaves, tomato, brocolli",
-    category: "steaked",
+    category: "steaky",
     rating: 4.0,
   },
   {
@@ -174,7 +174,7 @@ export const menus = [
     img: food7,
     price: 13.25,
     ingredients: "cucumber, chill, apple, cayenne pepper",
-    category: "veggies",
+    category: "veggy",
     rating: 4.6,
   },
   {
@@ -182,7 +182,7 @@ export const menus = [
     img: food8,
     price: 9.5,
     ingredients: "tomato, spinach, tomato, sauce",
-    category: "veggies",
+    category: "veggy",
     rating: 4.8,
   },
   {
@@ -190,7 +190,7 @@ export const menus = [
     img: food9,
     price: 6.99,
     ingredients: "apple, steak, jute leaves, hot chilli",
-    category: "steaked",
+    category: "steaky",
     rating: 4.2,
   },
 ]

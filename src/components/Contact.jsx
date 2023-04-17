@@ -15,7 +15,7 @@ const Contact = () => {
         data-aos-easing="ease-in-out"
 
         data-aos-once="true"
-        >
+      >
         <div className="pb-10">
           <h2 className={layout.sectionTitle}>contact</h2>
           <p className={layout.sectionSubtitle}>Get in touch with us!</p>
@@ -40,7 +40,7 @@ const Contact = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            >
+          >
             <div className="w-full">
               {contacts.map((contact, index) => (
                 <div key={index} className={index === 0 ? "mt-0" : "mt-10"}>
@@ -58,7 +58,7 @@ const Contact = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            >
+          >
             <form
               action=""
               method="post"
@@ -100,7 +100,7 @@ const Contact = () => {
               </div>
 
               <div className="text-center">
-                <Button className={`dark:bg-fola-600 dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 `}>
+                <Button className={`dark:bg-fola-600 rounded-lg dark:hover:bg-fola-700 px-5 py-2.5 bg-fola-500 hover:bg-fola-600 `}>
                   Send Message
                 </Button>
               </div>

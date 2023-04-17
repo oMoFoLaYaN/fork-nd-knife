@@ -22,7 +22,7 @@ const Menu = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
-          >
+        >
           <div className="section-title pb-10" data-aos="fade-left">
             <h2 className={layout.sectionTitle}>Menu</h2>
             <p className={layout.sectionSubtitle}>check out our forky</p>
@@ -31,8 +31,10 @@ const Menu = () => {
             <div className="lg:w-full lg:basis-auto mx-auto flex flex-row justify-center">
               {filters.map((filter, index) => (
                 <ul key={index} id="menu-flters" className='text-right xs:text-center mx-0 my-0 p-0'>
-                  <li onClick={(event) => { filterClick(filter.name); event.preventDefault(); }} className={`cursor-pointer ${filter === filter.name ? 'text-red-500' : 'text-fola-800 dark:text-fola-200 hover:text-fola-500 hover:dark:text-fola-600'} capitalize inline-block xs:text-base text-xs font-medium leading-none transition-all ease-in-out delay-300 mb-2.5 pt-2 pb-2.5 px-3`}>{filter.name}
-                  </li>
+
+                  <Button onClick={(event) => { filterClick(filter.name); event.preventDefault(); }} className={`text-fola-800 bg-transparent focus:bg-fola-400 px-2 py-1 mx-1 xs:w-[4.6rem] w-[3.2rem] text-[10px] xs:text-sm capitalize border-2 rounded-b-3xl -left-4 sm:left-0 bottom-4 relative rounded-t-sm border-fola-500 hover:bg-fola-700/40`}>
+                    {filter.name}
+                  </Button>
                 </ul>
               ))}
             </div>
@@ -60,7 +62,7 @@ const Menu = () => {
                     <p className='relative ml-1 lg:ml-3 sm:text-md text-sm text-fola-900 dark:text-fola-300'>{menu.rating}</p>
                   </div>
 
-                  <Button className={`dark:bg-fola-600  dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 x-4 py-1 text-fola-900 font-semibold rounded-b-3xl relative -bottom-7 rounded-t-sm border-t-fola-950 dark:border-t-fola-150`}>
+                  <Button className={`dark:bg-fola-600  dark:hover:bg-fola-700 bg-fola-500 hover:bg-fola-600 px-5 py-1 text-fola-900 font-semibold rounded-b-3xl relative -bottom-7 rounded-t-sm border-t-fola-950 dark:border-t-fola-150`}>
                     Eat
                   </Button>
                 </div>

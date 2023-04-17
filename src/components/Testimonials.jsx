@@ -43,12 +43,10 @@ const Testimonials = () => {
                   spaceBetween: 20
                 },
                 1024: {
-                  width: 1000,
                   spaceBetween: 20,
                   slidesPerView: 2,
                 },
                 1280: {
-                  width: 1240,
                   spaceBetween: 20,
                   slidesPerView: 3,
                 },
@@ -69,7 +67,7 @@ const Testimonials = () => {
                 <SwiperSlide key={index} className="swiper-slide">
                   <div className="swiper-slide">
                     <div className="testimonial-item">
-                      <p className="italic text-fola-950 dark:text-fola-50 relative z-[1] mx-[15px] my-0 pt-5 pb-[60px] px-5 bg-fola-100 dark:bg-fola-950 rounded-xl clay">
+                      <p className="italic text-fola-950 dark:text-fola-50 relative z-[1] mr-3 ml-1 my-0 pt-5 pb-[60px] px-5 bg-fola-100 dark:bg-fola-950 rounded-xl clay">
                         <i className="bi bi-quote text-fola-700 inline-block left-[-5px] relative text-[26px]" />
                         {testimonial.review}
                         <i className="bi bi-quote text-fola-700 text-[26px] inline-block right-[-5px] relative top-2.5 rotate-180" />

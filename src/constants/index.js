@@ -282,7 +282,7 @@ export const parties = [
     price: 299,
     details: [
       {
-        description: " Our restaurant is equipped to host large-scale corporate events with all the amenities you need to impress your clients or employees. Our corporate event packages include",
+        description: " We have all the amenities you need to impress your clients. Our corporate event packages includes",
         list: [
           {
             li: "access to audio/visual equipment",
@@ -291,7 +291,7 @@ export const parties = [
             li: "customizable menus",
           },
           {
-            li: "dedicated event coordinators to ensure a successful event",
+            li: "resolute event protcols",
           },
         ],
         conclusion: "Every detail is taken care of, so you can focus on building relationships with your clients or employees.",
@@ -304,7 +304,7 @@ export const parties = [
     price: 529,
     details: [
       {
-        description: " We know that your wedding day is one of the most important days of your life, and we're here to help you make it perfect. Our wedding reception packages include",
+        description: "Your wedding day is an important day of your life. We have wedding reception packages that includes",
         list: [
           {
             li: "access to our beautiful event spaces",
@@ -313,7 +313,7 @@ export const parties = [
             li: "customizable menus",
           },
           {
-            li: "dedicated event coordinators to ensure your special day is everything you've dreamed of",
+            li: "tenacious event coordinators",
           },
         ],
         conclusion: "our experienced staff will take care of all the details so you can enjoy your special day stress-free.",

@@ -13,11 +13,11 @@ const Why = () => {
         data-aos-easing="ease-in-out"
         data-aos-once="true"
         >
-        <div className="section-title pb-10" data-aos="fade-left">
+        <div className="section-title pb-10">
           <h2 className={layout.sectionTitle}>why us</h2>
           <p className={layout.sectionSubtitle}>reason to count on us</p>
         </div>
-        <div className={`${layout.row}`} data-aos="fade-right">
+        <div className={`${layout.row}`}>
           <div className="flex flex-col lg:flex-row">
             {reasons.map((reason) => (
               <div key={reason.why} className="box bg-fola-100 dark:bg-fola-990 clay ease-in-out w-full transition-all duration-500 delay-300 px-[30px] py-[50px] my-3 lg:mx-3 rounded-md hover:pt-[30px] hover:pb-[70px] hover:px-[30px]">

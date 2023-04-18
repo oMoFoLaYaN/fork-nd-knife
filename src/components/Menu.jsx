@@ -23,7 +23,7 @@ const Menu = () => {
           data-aos-easing="ease-in-out"
           data-aos-once="true"
         >
-          <div className="section-title pb-10" data-aos="fade-left">
+          <div className="section-title pb-10">
             <h2 className={layout.sectionTitle}>Menu</h2>
             <p className={layout.sectionSubtitle}>check out our forky</p>
           </div>

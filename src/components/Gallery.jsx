@@ -46,8 +46,8 @@ const Gallery = () => {
             
           >
             {gallery.map((img, index) => (
-              <SwiperSlide key={index} className="bg-cover center">
-                <img src={img.img} className="rounded-xl w-full" />
+              <SwiperSlide key={index} className="bg-cover center mx-auto flex justify-center ">
+                <img src={img.img} className="rounded-xl w-9/12" />
               </SwiperSlide>
             ))}
 

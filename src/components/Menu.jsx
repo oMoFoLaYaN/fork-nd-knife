@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { filters, menus } from '../constants'
 import { layout } from '../style'
 import Button from './Button'
@@ -6,9 +6,14 @@ import Button from './Button'
 
 const Menu = () => {
   const [filter, setFilter] = useState('all');
+  const [active, setActive] = useState(0);
+
+  
+useEffect(() => {
+  setActive(0); // set the active button to the first one
+}, []);
 
   const filterClick = (category) => {
-    console.log('Filter clicked:', category);
     setFilter(category === filter ? 'all' : category);
   };
   return (
@@ -32,7 +37,7 @@ const Menu = () => {
               {filters.map((filter, index) => (
                 <ul key={index} id="menu-flters" className='text-right xs:text-center mx-0 my-0 p-0'>
 
-                  <Button onClick={(event) => { filterClick(filter.name); event.preventDefault(); }} className={`text-fola-800 bg-transparent focus:bg-fola-400 px-2 py-1 mx-1 xs:w-[4.6rem] w-[3.2rem] text-[10px] xs:text-sm capitalize border-2 rounded-b-3xl -left-4 sm:left-0 bottom-4 relative rounded-t-sm border-fola-500 hover:bg-fola-700/40`}>
+                  <Button onClick={(event) => { filterClick(filter.name); event.preventDefault(); setActive(index); }} className={`text-fola-800 ${active === index ? 'bg-fola-400 text-fola-900 dark:text-fola-990' : 'bg-transparent'} ${ filter.name === 'all' ? 'bg-fola-500' : '' } px-2 py-1 mx-1 xs:w-[4.5rem] sm:w-[5rem] sm:mx-3 w-[3.2rem] text-[10px] xs:text-sm capitalize border-2 rounded-b-3xl -left-4 sm:left-0 bottom-4 relative rounded-t-sm border-fola-500 hover:bg-fola-700/40`}>
                     {filter.name}
                   </Button>
                 </ul>

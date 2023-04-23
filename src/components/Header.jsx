@@ -60,7 +60,7 @@ const Header = () => {
           {navLinks.map((nav) => (
             <ul key={nav.id} className="flex items-center m-0 p-0">
               <li className="relative">
-                <a className={`flex items-center justify-between whitespace-nowrap duration-300 text-sm pl-[30px] pr-0 py-2.5  
+                <a className={`flex items-center justify-between whitespace-nowrap duration-300 text-sm pl-[30px] pr-0 py-2.5 cursor-pointer 
                  dark:hover:text-fola-200 hover:text-fola-800 ${activeSection === nav.id ? 'text-fola-400 dark:text-fola-300 underline decoration-2 decoration-fola-600 underline-offset-2' : 'text-fola-990 dark:text-fola-50'} relative`}
                   onClick={() => handleScrollTo(`#${nav.id}`)}>
                   {nav.title}

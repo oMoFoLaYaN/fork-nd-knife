@@ -1,22 +1,11 @@
 import React from 'react'
 import { reasons } from '../constants'
 import { layout } from "../style";
+import Section from './Section';
 
 const Why = () => {
   return (
-    <section id="why-us" className="why-us bg-fola-50 dark:bg-fola-950">
-      <div className={layout.container}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        >
-        <div className="section-title pb-10">
-          <h2 className={layout.sectionTitle}>why us</h2>
-          <p className={layout.sectionSubtitle}>reason to count on us</p>
-        </div>
+    <Section id="why-us" className="bg-fola-50 dark:bg-fola-950" title="why us" subtitle="reason to count on us">
         <div className={`${layout.row}`}>
           <div className="flex flex-col lg:flex-row">
             {reasons.map((reason) => (
@@ -28,8 +17,7 @@ const Why = () => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
 
   )
 }

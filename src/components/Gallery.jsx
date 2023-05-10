@@ -13,23 +13,13 @@ import "swiper/css/thumbs";
 import { FreeMode, Thumbs } from "swiper";
 
 import { layout } from "../style";
+import Section from "./Section";
 
 const Gallery = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <section id="gallery" className=" bg-fola-50 dark:bg-fola-950 ">
-      <div className={layout.container}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        >
-        <div className="section-title pb-10">
-          <h2 className={layout.sectionTitle}>Gallery</h2>
-          <p className={layout.sectionSubtitle}>Picture-perfect moments from our restaurant</p>
-        </div>
+    <Section id="gallery" className=" bg-fola-50 dark:bg-fola-950 " title="gallery" subtitle="Picture-perfect moments from our restaurant">
+
         <div className={`${layout.row}`}>
           <Swiper
             loop={true}
@@ -37,13 +27,6 @@ const Gallery = () => {
             thumbs={{ swiper: thumbsSwiper }}
             modules={[FreeMode, Thumbs]}
             className="mySwiper2 w-full h-full mb-4"
-            data-aos="zoom-in-right"
-            data-aos-offset="200"
-            data-aos-delay="10"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-once="true"
-            
           >
             {gallery.map((img, index) => (
               <SwiperSlide key={index} className="bg-cover center mx-auto flex justify-center ">
@@ -62,12 +45,6 @@ const Gallery = () => {
             watchSlidesProgress={true}
             modules={[FreeMode, Thumbs]}
             className="mySwiper"
-            data-aos="zoom-in-left"
-            data-aos-offset="200"
-            data-aos-delay="10"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-once="true"
             
           >
             {gallery.map((img, index) => (
@@ -78,8 +55,7 @@ const Gallery = () => {
 
           </Swiper>
         </div>
-      </div>
-    </section>
+    </Section>
   )
 }
 

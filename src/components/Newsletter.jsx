@@ -1,16 +1,8 @@
 import Button from "./Button"
-
+import Section from "./Section"
 const Newsletter = () => {
   return (
-    <section className="">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"
-        data-aos="zoom-in"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-      >
+    <Section className="">
         <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-fola-950 sm:text-4xl dark:text-fola-50 capitalize">
             Stay in the Loop Today!
@@ -59,8 +51,7 @@ const Newsletter = () => {
             </div>
           </form>
         </div>
-      </div>
-    </section>
+    </Section>
 
   )
 }

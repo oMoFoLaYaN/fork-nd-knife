@@ -3,24 +3,12 @@ import { contacts } from "../constants"
 import Input from './Input'
 import Textarea from './Textarea'
 import Button from './Button'
+import Section from "./Section"
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact bg-fola-50 dark:bg-fola-950">
-      <div className={layout.container}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+    <Section id="contact" className="bg-fola-50 dark:bg-fola-950" title="contact" subtitle="Get in touch with us!">
 
-        data-aos-once="true"
-      >
-        <div className="pb-10">
-          <h2 className={layout.sectionTitle}>contact</h2>
-          <p className={layout.sectionSubtitle}>Get in touch with us!</p>
-        </div>
-      </div>
       <div >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5179237457787!2d4.520582915216858!3d7.518345294577285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103830df3737c8a9%3A0x62755a792d6a365b!2sObafemi%20Awolowo%20University!5e0!3m2!1sen!2sng!4v1681177321285!5m2!1sen!2sng"
@@ -108,7 +96,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
 
   )
 }

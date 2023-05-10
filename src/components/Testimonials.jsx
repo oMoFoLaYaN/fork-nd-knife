@@ -1,23 +1,12 @@
-import { layout } from '../style'
 import { testimonials } from "../constants";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Mousewheel, Keyboard } from "swiper";
+import Section from "./Section";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="testimonials section-bg">
-      <div className={layout.container}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        >
-        <div className="pb-10">
-          <h2 className={layout.sectionTitle}>Testimonials</h2>
-          <p className={layout.sectionSubtitle}>what's the buzz 'bout us this week?</p>
-        </div>
+    <Section id="testimonials" className="" title="Testimonials" subtitle="what's the buzz 'bout us this week?">
+
         <div
           className="testimonials-slider overflow-hidden">
           <div className="swiper-wrapper"
@@ -80,8 +69,7 @@ const Testimonials = () => {
             </Swiper>
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
 
   )
 }

@@ -1,26 +1,13 @@
 import React, { useRef } from 'react';
-import { layout } from '../style'
 import Button from './Button'
 import Input from './Input'
 import Textarea from './Textarea'
+import Section from './Section';
 
 const Reservation = () => {
   return (
-    <section id="bookTable" className="bg-fola-50 dark:bg-fola-950 ">
-      <div className={layout.container}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-      >
-        <div className="pb-10">
-          <h2 className={layout.sectionTitle}>Reservation</h2>
-          <p className={layout.sectionSubtitle}>Secure your spot with a click</p>
-        </div>
-
-        <form>
+    <Section id="bookTable" className="bg-fola-50 dark:bg-fola-950 " title='reservation' subtitle='Secure your spot with a click'>
+<form>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6">
             <Input
               type="text"
@@ -81,9 +68,7 @@ const Reservation = () => {
           </div>
         </form>
 
-
-      </div>
-    </section>
+    </Section>
 
   )
 }

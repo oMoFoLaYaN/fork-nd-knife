@@ -1,31 +1,15 @@
 import { chefs } from "../constants";
 import { layout } from "../style";
+import Section from "./Section";
 
 const Chefs = () => {
   const a = "transition-[color] duration-[0.3s] text-white inline-block mx-2.5 my-0 hover:text-fola-700"
   const i = "text-lg mx-0.5 my-0"
   return (
-    <section id="chefs" className="chefs">
-      <div className={layout.container}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        >
-        <div className="pb-10">
-          <h2 className={layout.sectionTitle}>Chefs</h2>
-          <p className={layout.sectionSubtitle}>Our culinary wizards</p>
-        </div>
+    <Section id="chefs" title="chefs" subtitle="Our culinary wizards">
+
         <div className={layout.row}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="10"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-once="true"
             >
             {chefs.map((chef, index) => (
               <div key={index} className=" member group text-center relative overflow-hidden mb-5 rounded-xl">
@@ -46,8 +30,8 @@ const Chefs = () => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+
+    </Section>
   );
 };
 

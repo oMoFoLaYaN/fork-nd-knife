@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { filters, menus } from '../constants'
 import { layout } from '../style'
 import Button from './Button'
+import Section from './Section'
 
 
 const Menu = () => {
@@ -19,19 +20,7 @@ const Menu = () => {
   return (
     <>
 
-      <section id="menu" className="menu section-bg">
-        <div className={layout.container}
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="10"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-once="true"
-        >
-          <div className="section-title pb-10">
-            <h2 className={layout.sectionTitle}>Menu</h2>
-            <p className={layout.sectionSubtitle}>check out our forky</p>
-          </div>
+      <Section id="menu" className="" title='menu' subtitle='check out our forky'>
           <div className={layout.row}>
             <div className="lg:w-full lg:basis-auto mx-auto flex flex-row justify-center">
 
@@ -48,10 +37,6 @@ const Menu = () => {
           <div className={layout.row}>
             {menus.filter((menu) => filter === 'all' || menu.category === filter).map((menu) => (
               <div key={menu.name}
-                data-aos="fade-up"
-                data-aos-delay="0"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"
                 className="w-full lg:w-5/12 my-8 lg:mx-8 px-5 py-3 h-fit bg-fola-100 dark:bg-fola-950 rounded-xl clay">
                 <div className='flex flex-row justify-between'>
                   <img src={menu.img} className="menu-img w-24 relative -top-10 right-0 xs:-right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900" alt={menu.name} />
@@ -76,8 +61,7 @@ const Menu = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+      </Section>
     </>
 
   )

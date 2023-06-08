@@ -1,9 +1,21 @@
-import { testimonials } from "../constants";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Mousewheel, Keyboard } from "swiper";
+
+import { urlFor, client } from '../client';
 import Section from "./Section";
 
 const Testimonials = () => {
+  const [testimonials, setTestimonials] = useState([]);
+  
+  useEffect(() => {
+    const query = '*[_type == "testimonials"]';
+
+    client.fetch(query).then((data) => {
+      setTestimonials(data);
+    });
+  }, []);
+  
   return (
     <Section id="testimonials" className="" title="Testimonials" subtitle="what's the buzz 'bout us this week?">
 
@@ -46,13 +58,13 @@ const Testimonials = () => {
               modules={[Pagination, Mousewheel, Autoplay, Keyboard]}
               className="swiper-wrapper"
             >
-              {testimonials.map((testimonial, index) => (
+              {testimonials?.map((testimonial, index) => (
                 <SwiperSlide key={index} className="swiper-slide">
                   <div className="swiper-slide">
                     <div className="testimonial-item">
                       <p className="italic text-fola-950 dark:text-fola-50 relative z-[1] mr-3 ml-1 my-0 pt-5 pb-[60px] px-5 bg-fola-100 dark:bg-fola-950 rounded-xl clay">
                         <i className="bi bi-quote text-fola-700 inline-block left-[-5px] relative text-[26px]" />
-                        {testimonial.review}
+                        {testimonial.feedback}
                         <i className="bi bi-quote text-fola-700 text-[26px] inline-block right-[-5px] relative top-2.5 rotate-180" />
                       </p>
                       <img
@@ -61,7 +73,7 @@ const Testimonials = () => {
                         alt=""
                       />
                       <h3 className="text-lg font-semibold text-fola-990 dark:text-fola-0 ml-[45px] mr-0 mt-2.5 mb-[5px]">{testimonial.name}</h3>
-                      <h4 className="text-sm text-fola-990/60 dark:text-fola-0/60 ml-[45px] mr-0 my-0">{testimonial.profession}</h4>
+                      <h4 className="text-sm text-fola-990/60 dark:text-fola-0/60 ml-[45px] mr-0 my-0">{testimonial.who}</h4>
                     </div>
                   </div>
                 </SwiperSlide>

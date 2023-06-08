@@ -326,44 +326,44 @@ export const testimonials = [
   {
     name: 'Samantha Jones',
     img: testimonial1,
-    profession: 'Food Critic',
-    review: 'The flavors were well-balanced and the presentation was impeccable. This is easily one of the best restaurants in the city.'
+    who: 'Food Critic',
+    feedback: 'The flavors were well-balanced and the presentation was impeccable. This is easily one of the best restaurants in the city.'
   },
   {
     name: 'Javier Rodriguez',
     img: testimonial2,
-    profession: 'Chef',
-    review: 'I was blown away by the creativity and attention to detail in every dish. The chef is a true master of their craft.'
+    who: 'Chef',
+    feedback: 'I was blown away by the creativity and attention to detail in every dish. The chef is a true master of their craft.'
   },
   {
     name: 'Emily Nguyen',
     img: testimonial3,
-    profession: 'Server',
-    review: 'The service was exceptional - our server was friendly, knowledgeable, and attentive throughout the meal.'
+    who: 'Server',
+    feedback: 'The service was exceptional - our server was friendly, knowledgeable, and attentive throughout the meal.'
   },
   {
     name: 'Alex Martinez',
     img: testimonial4,
-    profession: 'Bartender',
-    review: 'The cocktail menu was top-notch and the drinks were expertly crafted. The bar staff really knows their stuff.'
+    who: 'Bartender',
+    feedback: 'The cocktail menu was top-notch and the drinks were expertly crafted. The bar staff really knows their stuff.'
   },
   {
     name: 'William Chen',
     img: testimonial5,
-    profession: 'Sommelier',
-    review: 'The wine list was impressive and our sommelier recommended the perfect pairing for each course. A truly memorable dining experience.'
+    who: 'Sommelier',
+    feedback: 'The wine list was impressive and our sommelier recommended the perfect pairing for each course. A truly memorable dining experience.'
   },
   {
     name: 'Maya Patel',
     img: testimonial6,
-    profession: 'Food Blogger',
-    review: 'I couldn\'t get enough of the dishes here - each one was more delicious than the last. I\'ll definitely be recommending this restaurant to my readers.'
+    who: 'Food Blogger',
+    feedback: 'I couldn\'t get enough of the dishes here - each one was more delicious than the last. I\'ll definitely be recommending this restaurant to my readers.'
   },
   {
     name: 'John Smith',
     img: testimonial7,
-    profession: 'Tourist',
-    review: 'I stumbled upon this restaurant while exploring the city and I\'m so glad I did. The food was amazing and the atmosphere was charming.'
+    who: 'Tourist',
+    feedback: 'I stumbled upon this restaurant while exploring the city and I\'m so glad I did. The food was amazing and the atmosphere was charming.'
   }
 ];
 

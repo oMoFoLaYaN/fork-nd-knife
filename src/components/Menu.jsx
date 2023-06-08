@@ -17,6 +17,7 @@ const Menu = () => {
   const filterClick = (category) => {
     setFilter(category === filter ? 'all' : category);
   };
+
   return (
     <>
 

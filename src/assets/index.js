@@ -9,7 +9,6 @@ import food8 from "./food8.png";
 import food9 from "./food9.png";
 import food10 from "./food10.png";
 import hero from "./hero.jpg";
-import heroed from "./heroed.png";
 import about from "./about.jpg";
 import special1 from "./specials-1.png";
 import special2 from "./specials-2.png";
@@ -51,7 +50,6 @@ export {
     food9,
     food10,
     hero,
-    heroed,
     about,
     special1,
     special2,

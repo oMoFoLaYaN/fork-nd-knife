@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { filters, menus } from '../constants'
+import { filters } from '../constants'
 import { layout } from '../style'
 import Button from './Button'
 import Section from './Section'
+
+import  sanityClient  from "../client";
+import { urlFor } from '../client';
 
 
 const Menu = () => {
@@ -18,6 +21,18 @@ const Menu = () => {
     setFilter(category === filter ? 'all' : category);
   };
 
+  const [menus, setMenus] = useState(null);
+  
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "menus"]`
+      )
+      .then((data) => setMenus(data))
+      .catch(console.error);
+
+  }, []);
+
   return (
     <>
 
@@ -27,7 +42,11 @@ const Menu = () => {
 
               <ul id="menu-flters" className='text-right xs:text-center mx-0 my-0 p-0'>
                 {filters.map((filter, index) => (
-                  <Button key={index} onClick={(event) => { filterClick(filter.name); event.preventDefault(); setActive(index); }} className={`text-fola-800 ${active === index ? 'bg-fola-400 text-fola-900 dark:text-fola-990' : 'bg-transparent'} ${filter.name === 'all' ? 'bg-fola-500' : ''} px-2 py-1 mx-1 xs:w-[4.5rem] sm:w-[5rem] sm:mx-3 w-[3.2rem] text-[10px] xs:text-sm capitalize border-2 rounded-b-3xl -left-4 sm:left-0 bottom-4 relative rounded-t-sm border-fola-500 hover:bg-fola-700/40`}>
+                  <Button key={index} onClick={(event) => { 
+                    filterClick(filter.name); 
+                    event.preventDefault(); 
+                    setActive(index); }} 
+                    className={`text-fola-800 ${active === index ? 'bg-fola-400 text-fola-900 dark:text-fola-990' : 'bg-transparent'} ${filter.name === 'all' ? 'bg-fola-500' : ''} px-2 py-1 mx-1 xs:w-[4.5rem] sm:w-[5rem] sm:mx-3 w-[3.2rem] text-[10px] xs:text-sm capitalize border-2 -left-4 sm:left-0 bottom-4 relative rounded-md border-fola-500 hover:bg-fola-700/40`}>
                     {filter.name}
                   </Button>
                 ))}
@@ -36,11 +55,14 @@ const Menu = () => {
             </div>
           </div>
           <div className={layout.row}>
-            {menus.filter((menu) => filter === 'all' || menu.category === filter).map((menu) => (
+            {menus && menus.filter((menu) => filter === 'all' || menu.category === filter)
+            .map((menu) => (
               <div key={menu.name}
                 className="w-full lg:w-5/12 my-8 lg:mx-8 px-5 py-3 h-fit bg-fola-100 dark:bg-fola-950 rounded-xl clay">
                 <div className='flex flex-row justify-between'>
-                  <img src={menu.img} className="menu-img w-24 relative -top-10 right-0 xs:-right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900" alt={menu.name} />
+                  <img src={urlFor(menu.img)} 
+                  className="menu-img w-24 h-24 relative -top-10 right-0 xs:-right-4 shadow-2xl rounded-full shadow-fola-950 dark:shadow-fola-900" 
+                  alt={menu.name} />
                   <i className='bi bi-heart-fill px-1 py-3 text-xl cursor-pointer text-red-600 dark:text-red-400'></i>
                 </div>
                 <div className="menu-content flex flex-row relative -top-5 justify-between">

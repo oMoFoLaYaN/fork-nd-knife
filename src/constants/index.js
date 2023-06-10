@@ -178,10 +178,10 @@ export const menus = [
     rating: 4.6,
   },
   {
-    name: "tomato fajitas",
+    name: "fajitas",
     img: food8,
     price: 9.5,
-    ingredients: "tomato, spinach, tomato, sauce",
+    ingredients: "tomato, spinach, bacon sheet, sauce",
     category: "veggy",
     rating: 4.8,
   },

@@ -9,7 +9,7 @@ const Hero = () => {
       <div
         className={`${layout.container} pt-[110px] md:pt-[98px] relative text-center lg:text-left`}>
         <div className={`${layout.row}`}>
-          <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
+          <div class="py-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
                       data-aos="zoom-in"
                       data-aos-offset="200"
                       data-aos-delay="10"
@@ -25,11 +25,11 @@ const Hero = () => {
             <span className='text-fola-600'> invest </span>
             in a world of flavor?</h1>
             <p class="mb-8 sm:text-lg text-sm font-normal text-fola-50 lg:text-xl sm:px-16 xl:px-48">Fork nd Knife has got you covered! Come explore the potential of taste and see what mouth-watering opportunities we have in store for you.</p>
-            <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
               <a onClick={() => handleScrollTo(`#bookTable`)} class="inline-flex justify-center items-center py-3 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-fola-700 hover:bg-fola-800 focus:ring-4 focus:ring-fola-300 dark:focus:ring-fola-900">
                 Book Table <i class="bi bi-arrow-down ml-2"></i> </a>
               <a onClick={() => handleScrollTo(`#menu`)}
-                class="inline-flex justify-center items-center py-2 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center rounded-lg border border-fola-300 hover:bg-fola-100 focus:ring-4 focus:ring-fola-100 text-fola-50 hover:text-fola-800">
+                className="inline-flex justify-center items-center py-2 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center rounded-lg border border-fola-300 hover:bg-fola-100 focus:ring-4 focus:ring-fola-100 text-fola-50 hover:text-fola-800">
                 <svg
                   className='w-6 mr-2 fill-fola-600'
                   xmlns="http://www.w3.org/2000/svg"

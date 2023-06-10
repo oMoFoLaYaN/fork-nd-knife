@@ -4,6 +4,7 @@ import { Pagination, Autoplay, Mousewheel, Keyboard } from "swiper";
 
 import Section from "./Section";
 import  sanityClient  from "../client";
+import { urlFor } from '../client';
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState(null);
@@ -11,16 +12,7 @@ const Testimonials = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "testimonials"]{
-          name,
-          who,
-          img{
-            asset->{
-              url
-            }
-          },
-          feedback
-        }`
+        `*[_type == "testimonials"]`
       )
       .then((data) => setTestimonials(data))
       .catch(console.error);
@@ -82,7 +74,7 @@ const Testimonials = () => {
                         <i className="bi bi-quote text-fola-700 text-[26px] inline-block right-[-5px] relative top-2.5 rotate-180" />
                       </p>
                       <img
-                        src={testimonial.img.asset.url}
+                        src={urlFor(testimonial.img)}
                         className="w-[90px] h-[90px] rounded-full border-8 dark:border-fola-400/20 border-fola-900/20 border-solid relative z-20 ml-10 mr-0 -mt-10 mb-0"
                         alt={testimonial.name}
                       />

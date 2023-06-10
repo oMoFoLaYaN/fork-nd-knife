@@ -322,50 +322,7 @@ export const parties = [
   },
 ]
 
-export const testimonials = [
-  {
-    name: 'Samantha Jones',
-    img: testimonial1,
-    who: 'Food Critic',
-    feedback: 'The flavors were well-balanced and the presentation was impeccable. This is easily one of the best restaurants in the city.'
-  },
-  {
-    name: 'Javier Rodriguez',
-    img: testimonial2,
-    who: 'Chef',
-    feedback: 'I was blown away by the creativity and attention to detail in every dish. The chef is a true master of their craft.'
-  },
-  {
-    name: 'Emily Nguyen',
-    img: testimonial3,
-    who: 'Server',
-    feedback: 'The service was exceptional - our server was friendly, knowledgeable, and attentive throughout the meal.'
-  },
-  {
-    name: 'Alex Martinez',
-    img: testimonial4,
-    who: 'Bartender',
-    feedback: 'The cocktail menu was top-notch and the drinks were expertly crafted. The bar staff really knows their stuff.'
-  },
-  {
-    name: 'William Chen',
-    img: testimonial5,
-    who: 'Sommelier',
-    feedback: 'The wine list was impressive and our sommelier recommended the perfect pairing for each course. A truly memorable dining experience.'
-  },
-  {
-    name: 'Maya Patel',
-    img: testimonial6,
-    who: 'Food Blogger',
-    feedback: 'I couldn\'t get enough of the dishes here - each one was more delicious than the last. I\'ll definitely be recommending this restaurant to my readers.'
-  },
-  {
-    name: 'John Smith',
-    img: testimonial7,
-    who: 'Tourist',
-    feedback: 'I stumbled upon this restaurant while exploring the city and I\'m so glad I did. The food was amazing and the atmosphere was charming.'
-  }
-];
+
 
 export const gallery = [
   {
@@ -394,35 +351,7 @@ export const gallery = [
   },
 ];
 
-export const chefs = [
-  {
-    img: chef1,
-    name: 'John Smith',
-    role: 'executive chef',
-    facebook: 'http://www.facebook.com',
-    twitter: 'http://twitter.com',
-    instagram: 'http://instagram.com',
-    linkedin: 'http://www.linkedin.com',
-  },
-  {
-    img: chef2,
-    name: 'sarah davis',
-    role: 'expediter',
-    facebook: 'http://www.facebook.com',
-    twitter: 'http://twitter.com',
-    instagram: 'http://instagram.com',
-    linkedin: 'http://www.linkedin.com',
-  },
-  {
-    img: chef3,
-    name: 'James Lee',
-    role: 'line cook',
-    facebook: 'http://www.facebook.com',
-    twitter: 'http://twitter.com',
-    instagram: 'http://instagram.com',
-    linkedin: 'http://www.linkedin.com',
-  },
-]
+
 
 export const footerLinks = [
   {

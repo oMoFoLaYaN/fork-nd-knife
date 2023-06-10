@@ -1,6 +1,6 @@
 export default {
-    name:'testimonials',
-    title:'Testimonials',
+    name:'chefs',
+    title:'Chefs',
     type: 'document',
     fields:[
         { 
@@ -9,8 +9,8 @@ export default {
             type: 'string'
         },
         {
-            name:'who',
-            title:'Who',
+            name:'role',
+            title:'Role',
             type:'string'
         },
         {
@@ -20,11 +20,6 @@ export default {
             options: {
               hotspot: true,
             },
-        },  
-        {
-            name:'feedback',
-            title:'Feedback',
-            type:'string'
         }
     ]
 }

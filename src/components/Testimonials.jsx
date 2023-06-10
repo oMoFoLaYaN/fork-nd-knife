@@ -2,22 +2,36 @@ import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Mousewheel, Keyboard } from "swiper";
 
-import { urlFor, client } from '../client';
 import Section from "./Section";
+import  sanityClient  from "../client";
 
 const Testimonials = () => {
-  const [testimonials, setTestimonials] = useState([]);
+  const [testimonials, setTestimonials] = useState(null);
   
   useEffect(() => {
-    const query = '*[_type == "testimonials"]';
+    sanityClient
+      .fetch(
+        `*[_type == "testimonials"]{
+          name,
+          who,
+          img{
+            asset->{
+              url
+            }
+          },
+          feedback
+        }`
+      )
+      .then((data) => setTestimonials(data))
+      .catch(console.error);
 
-    client.fetch(query).then((data) => {
-      setTestimonials(data);
-    });
   }, []);
   
+  console.log('data', testimonials)
   return (
-    <Section id="testimonials" className="" title="Testimonials" subtitle="what's the buzz 'bout us this week?">
+    <Section id="testimonials" className="" 
+    title="Testimonials" 
+    subtitle="what's the buzz 'bout us this week?">
 
         <div
           className="testimonials-slider overflow-hidden">
@@ -58,7 +72,7 @@ const Testimonials = () => {
               modules={[Pagination, Mousewheel, Autoplay, Keyboard]}
               className="swiper-wrapper"
             >
-              {testimonials?.map((testimonial, index) => (
+              {testimonials && testimonials.map((testimonial, index) => (
                 <SwiperSlide key={index} className="swiper-slide">
                   <div className="swiper-slide">
                     <div className="testimonial-item">
@@ -68,9 +82,9 @@ const Testimonials = () => {
                         <i className="bi bi-quote text-fola-700 text-[26px] inline-block right-[-5px] relative top-2.5 rotate-180" />
                       </p>
                       <img
-                        src={testimonial.img}
-                        className="w-[90px] rounded-full border-8 dark:border-fola-400/20 border-fola-900/20 border-solid relative z-20 ml-10 mr-0 -mt-10 mb-0"
-                        alt=""
+                        src={testimonial.img.asset.url}
+                        className="w-[90px] h-[90px] rounded-full border-8 dark:border-fola-400/20 border-fola-900/20 border-solid relative z-20 ml-10 mr-0 -mt-10 mb-0"
+                        alt={testimonial.name}
                       />
                       <h3 className="text-lg font-semibold text-fola-990 dark:text-fola-0 ml-[45px] mr-0 mt-2.5 mb-[5px]">{testimonial.name}</h3>
                       <h4 className="text-sm text-fola-990/60 dark:text-fola-0/60 ml-[45px] mr-0 my-0">{testimonial.who}</h4>

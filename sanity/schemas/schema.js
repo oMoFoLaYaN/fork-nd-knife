@@ -1,17 +1,15 @@
 import abouts from './abouts'
+import chefs from './chefs'
 import menus from './menus'
 import contact from './contact'
-import experiences from './experiences'
 import works from './works'
-import workExperience from './workExperience'
 import testimonials from './testimonials'
 
 export const schemaTypes = [
   abouts,
+  chefs,
   menus,
   contact,
-  experiences,
   works,
-  workExperience,
   testimonials,
 ]

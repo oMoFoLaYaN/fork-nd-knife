@@ -21,7 +21,9 @@ const Hero = () => {
               <span class="text-xs bg-fola-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="sm:text-sm text-[0.75rem] font-medium">Specials avaliable!</span>
               <i className="bi bi-chevron-double-right ml-3 relative duration-1000 group-hover:left-2"/>
             </a>
-            <h1 class="mb-4 sm:text-4xl text-xl xs:text-3xl font-extrabold tracking-tight leading-none capitalize md:text-5xl lg:text-6xl text-white">Looking to invest in a world of flavor?</h1>
+            <h1 class="mb-4 sm:text-4xl text-xl xs:text-3xl font-extrabold tracking-tight leading-none capitalize md:text-5xl lg:text-6xl text-white">Looking to
+            <span className='text-fola-600'> invest </span>
+            in a world of flavor?</h1>
             <p class="mb-8 sm:text-lg text-sm font-normal text-fola-50 lg:text-xl sm:px-16 xl:px-48">Fork nd Knife has got you covered! Come explore the potential of taste and see what mouth-watering opportunities we have in store for you.</p>
             <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
               <a onClick={() => handleScrollTo(`#bookTable`)} class="inline-flex justify-center items-center py-3 px-4 sm:py-3 sm:px-5 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-fola-700 hover:bg-fola-800 focus:ring-4 focus:ring-fola-300 dark:focus:ring-fola-900">
